@@ -49,6 +49,6 @@ formatted_sentence = ""
 for index, phrase in enumerate(wrapped_text):
     formatted_sentence = formatted_sentence + phrase + "\n"
 
-draw.multiline_text((x1 + (box_width / 2), y1 + (box_height / 2)),formatted_sentence,font=print_font,fill=(255, 0, 0, 255), anchor='mm')
+draw.multiline_text((x1 + (box_width / 2), y1 + (box_height / 2)),formatted_sentence,font=print_font,fill=(255, 0, 0, 255))
 
 im.save('test.png')
