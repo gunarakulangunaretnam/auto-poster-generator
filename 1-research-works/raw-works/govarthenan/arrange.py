@@ -2,12 +2,12 @@ import textwrap
 from PIL import ImageFont, ImageDraw, Image
 import os
 
-
-template = Image.open(os.path.join(os.getcwd(), "template.png"))  # Read
+im = template = Image.open(os.path.join(os.getcwd(), "template.png"))  # Read
 draw = ImageDraw.Draw(template)  # drawing object
 
 use_font = './times.ttf'
-use_size = 24
+use_size = 40
+prev_size = use_size
 cert_text = "Python is an interpreted high-level general-purpose programming language. Its design philosophy " \
             "emphasizes code readability with its use of significant indentation. Its language constructs as well as " \
             "its object-oriented approach aim to help programmers write clear, logical code for small and large-scale" \
@@ -42,8 +42,10 @@ def wrap(text=cert_text) -> str:
     return wrapped_text
 
 
-def check_fit(wrapped_text=wrap()) -> bool:
+def check_height(wrapped_text=wrap(), font=use_font, font_size=use_size) -> bool:
     """Checks whether the lines in the wrapped text exceed the given container configuration."""
+    print_font = ImageFont.truetype(font=font, size=font_size)
+    print(f"checking fit using font size {use_size}")
     line_widths = []
     line_heights = []
 
@@ -52,9 +54,38 @@ def check_fit(wrapped_text=wrap()) -> bool:
         line_heights.append((draw.textsize(phrase, font=print_font))[1])
 
     max_line_width = max(line_widths)
-    max_line_height = max(line_heights)
+    total_line_height = sum(line_heights) + 4 * len(line_heights)
+    print(f"Line heights = {line_heights}")
+    print(f"Total line heights = {sum(line_heights) + 4 * len(line_heights)}")
 
-    if max_line_width > box_width:
-        return False
-    else:
+    if total_line_height > box_height:
         return True
+    else:
+        return False
+
+
+while check_height():
+    print("Font size is too big.")
+
+    if input("Would you like to lower the font size automatically? (y/n): ").lower().strip() == 'y':
+        print("Trying font size", use_size - 1)
+        use_size -= 1
+        temp_font = ImageFont.truetype(font=use_font, size=use_size)
+        temp_wrapped_text = wrap()
+    else:
+        use_size = int(round(float(input(f"Enter a font size smaller than {use_size}: "))))
+        print("Trying font size", use_size - 1)
+        use_size -= 1
+        temp_font = ImageFont.truetype(font=use_font, size=use_size)
+        temp_wrapped_text = wrap()
+
+final_font = ImageFont.truetype(font='./times.ttf', size=use_size)
+print(wrap())
+print((x1 + box_width // 2, y1 + box_height // 2))
+
+draw.multiline_text(xy=(x1 + box_width // 2, y1 + box_height // 2),
+                    text=wrap(cert_text),
+                    font=final_font,
+                    anchor='mm')
+
+template.save('test.png')

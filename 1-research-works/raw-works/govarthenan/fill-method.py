@@ -3,7 +3,7 @@ from PIL import ImageFont, ImageDraw, Image
 import os
 
 
-print_font = ImageFont.truetype(font='./times.ttf', size=32)
+print_font = ImageFont.truetype(font='./times.ttf', size=35)
 im = template = Image.open(os.path.join(os.getcwd(), "template.png"))  # Read
 draw = ImageDraw.Draw(template)  # drawing object
 
