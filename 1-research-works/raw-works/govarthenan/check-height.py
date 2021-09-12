@@ -4,7 +4,7 @@ import os
 
 
 use_font = './times.ttf'
-use_size = 50
+use_size = 34
 use_spacing = 4  # Default spacing between lines for Imagedraw.multilline_text()
 
 
@@ -26,6 +26,7 @@ cert_text = "Python is an interpreted high-level general-purpose programming lan
             "its object-oriented approach aim to help programmers write clear, logical code for small and large-scale" \
             "projects. "
 
+# Copied block start
 # Calculating average character width and the number of characters that can be fitter inside the box in one line
 text_width, text_height = draw.textsize(cert_text, font=(ImageFont.truetype(font=use_font, size=use_size)))
 char_width = text_width // len(cert_text)
@@ -47,6 +48,7 @@ for phrase in temp_wrapped_text.split('\n'):
 total_line_height = sum(line_heights) + (use_spacing * len(line_heights))
 print("Box height: ", box_height)
 print("Line height details: ", sum(line_heights), (use_spacing * len(line_heights)))
+# Copied block end
 
 
 while box_height < total_line_height:
