@@ -3,7 +3,7 @@ from PIL import ImageFont, ImageDraw, Image
 import os
 
 
-font_size = 30
+font_size = 100
 
 # Coordinates of the corners of the box in the template
 y1, y2 = 187, 440
