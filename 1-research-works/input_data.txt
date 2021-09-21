@@ -1,0 +1,2 @@
+97| 171 | 352 | 754| 50 | number-data.txt
+187 | 440 | 63  |1045 | 50| data-without-number.txt
