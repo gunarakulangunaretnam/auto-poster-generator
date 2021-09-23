@@ -2,13 +2,11 @@ import textwrap
 from PIL import ImageFont, ImageDraw, Image
 import os
 
-
 data_point = []
-
 
 with open('input_data.txt') as f:
   
-  for line in f:
+  for index, line in enumerate(f):
     input_data = line.strip().split("|")
 
     with open(input_data[5].strip()) as f:
@@ -66,7 +64,5 @@ with open('input_data.txt') as f:
 
         font_size = font_size - 1
 
-
-        
 
 print(data_point)
