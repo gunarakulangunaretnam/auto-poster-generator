@@ -6,9 +6,9 @@ first_iteration = 0
 secound_iteration = 0
 
 content_data = []
-coordinate_data = []
+config_data = []
 
-with open('length.txt') as length_file:
+with open('config.txt') as length_file:
   
   for index, line in enumerate(length_file):
     data = line.strip().split("|")
@@ -20,7 +20,7 @@ with open('input_data.txt') as content_file:
   
   for index, line in enumerate(content_file):
     data = line.strip().split("|")
-    coordinate_data.append([data[0],data[1], data[2], data[3], data[4]])
+    config_data.append([data[0],data[1], data[2], data[3], data[4]])
 
     with open(data[5].strip()) as sub_file:
 
@@ -40,10 +40,10 @@ for x in range(int(first_iteration)):
 
 	for y in range(int(secound_iteration)):
 
-		font_size = int(coordinate_data[y][4])
+		font_size = int(config_data[y][4])
 
-		y1, y2 = int(coordinate_data[y][0]), int(coordinate_data[y][1])
-		x1, x2 = int(coordinate_data[y][2]), int(coordinate_data[y][3])
+		y1, y2 = int(config_data[y][0]), int(config_data[y][1])
+		x1, x2 = int(config_data[y][2]), int(config_data[y][3])
 		
 		box_width =  x2 - x1
 		box_height = y2 - y1
@@ -78,20 +78,3 @@ for x in range(int(first_iteration)):
 				font_size = font_size - 1
 
 	template.save(f'generated-data/{x}.png')
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
