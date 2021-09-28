@@ -1,5 +1,2 @@
 97 | 171 | 352 | 754|times.ttf|50|center|0|255,0,0|255| number-data.txt
-187 | 440 | 63 |1045|times.ttf|30|center|0|0,255,0|100| data-without-number.txt
- 
-
-
+187 | 440 | 63 |1045|times.ttf|30|center|0|0,255,0|50| data-without-number.txt

@@ -1,0 +1,1 @@
+y1 | y2 | x1 | x2 | font | font-size | align | stroke | color | opacity | FileName
