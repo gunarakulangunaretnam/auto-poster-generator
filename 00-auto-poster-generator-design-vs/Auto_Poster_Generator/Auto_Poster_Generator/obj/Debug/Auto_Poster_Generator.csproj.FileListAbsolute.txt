@@ -10,3 +10,16 @@ C:\Users\vrano\Documents\Visual Studio 2013\Projects\Auto_Poster_Generator\Auto_
 C:\Users\vrano\Documents\Visual Studio 2013\Projects\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.color_picker.resources
 C:\Users\vrano\Documents\Visual Studio 2013\Projects\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.features_form.resources
 C:\Users\vrano\Documents\Visual Studio 2013\Projects\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.main_form.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\bin\Debug\Auto_Poster_Generator.exe.config
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\bin\Debug\Auto_Poster_Generator.exe
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\bin\Debug\Auto_Poster_Generator.pdb
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csprojResolveAssemblyReference.cache
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.color_picker.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.features_form.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.main_form.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.Properties.Resources.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.GenerateResource.Cache
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.exe
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.pdb
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.loading_screen.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\00-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.main_dashboard_form.resources

@@ -22,5 +22,10 @@ namespace Auto_Poster_Generator
             features_form features1 = new features_form();
             features1.Show();
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

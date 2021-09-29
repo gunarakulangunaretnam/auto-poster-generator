@@ -61,6 +61,18 @@
     <Compile Include="features_form.Designer.cs">
       <DependentUpon>features_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="loading_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading_screen.Designer.cs">
+      <DependentUpon>loading_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_dashboard_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_dashboard_form.Designer.cs">
+      <DependentUpon>main_dashboard_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     <EmbeddedResource Include="features_form.resx">
       <DependentUpon>features_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="loading_screen.resx">
+      <DependentUpon>loading_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_dashboard_form.resx">
+      <DependentUpon>main_dashboard_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main_form.resx">
       <DependentUpon>main_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_processing20201127-2129-1acv0w7.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
