@@ -61,23 +61,23 @@
     <Compile Include="features_form.Designer.cs">
       <DependentUpon>features_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="loading_screen.cs">
+    <Compile Include="splash_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loading_screen.Designer.cs">
-      <DependentUpon>loading_screen.cs</DependentUpon>
+    <Compile Include="splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choice_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choice_form.Designer.cs">
+      <DependentUpon>choice_form.cs</DependentUpon>
     </Compile>
     <Compile Include="main_dashboard_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main_dashboard_form.Designer.cs">
       <DependentUpon>main_dashboard_form.cs</DependentUpon>
-    </Compile>
-    <Compile Include="main_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="main_form.Designer.cs">
-      <DependentUpon>main_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,14 +87,14 @@
     <EmbeddedResource Include="features_form.resx">
       <DependentUpon>features_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loading_screen.resx">
-      <DependentUpon>loading_screen.cs</DependentUpon>
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choice_form.resx">
+      <DependentUpon>choice_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main_dashboard_form.resx">
       <DependentUpon>main_dashboard_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="main_form.resx">
-      <DependentUpon>main_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

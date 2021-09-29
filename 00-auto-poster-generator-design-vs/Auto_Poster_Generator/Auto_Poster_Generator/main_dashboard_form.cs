@@ -10,56 +10,37 @@ using System.Windows.Forms;
 
 namespace Auto_Poster_Generator
 {
-    public partial class main_dashboard_form : Form
+    public partial class main_form : Form
     {
-        public main_dashboard_form()
+        public main_form()
         {
             InitializeComponent();
         }
 
-        int move;
-        int xCor;
-        int Ycor;
-
-        private void main_dashboard_form_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            features_form features1 = new features_form();
+            features1.Show();
         }
 
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            move = 1;
-            xCor = e.X;
-            Ycor = e.Y;
-        }
-
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (move == 1)
-            {
-
-                this.SetDesktopLocation(MousePosition.X - xCor, MousePosition.Y - Ycor);
-            }
-        }
-
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
-        {
-            move = 0;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                file_search_txtbox.Text = opf.FileName;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            features_form features_form_obj = new features_form();
+            features_form_obj.Show();
         }
     }
 }

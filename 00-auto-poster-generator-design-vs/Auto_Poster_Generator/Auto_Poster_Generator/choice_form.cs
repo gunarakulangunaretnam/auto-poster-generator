@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Auto_Poster_Generator
 {
-    public partial class features_form : Form
+    public partial class choice_form : Form
     {
-        public features_form()
+        public choice_form()
         {
             InitializeComponent();
         }
@@ -20,25 +20,6 @@ namespace Auto_Poster_Generator
         int move;
         int xCor;
         int Ycor;
-
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            if (opf.ShowDialog() == DialogResult.OK)
-            {
-                file_search_txtbox.Text = opf.FileName;
-            }
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            color_picker color_picker1 = new color_picker();
-            color_picker1.Show();
-        }
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void bunifuGradientPanel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -64,6 +45,13 @@ namespace Auto_Poster_Generator
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            main_form main_form_obj = new main_form();
+            main_form_obj.Show();
+            this.Hide();
         }
 
     }

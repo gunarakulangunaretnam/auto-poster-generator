@@ -10,41 +10,35 @@ using System.Windows.Forms;
 
 namespace Auto_Poster_Generator
 {
-    public partial class loading_screen : Form
+    public partial class splash_screen : Form
     {
-        public loading_screen()
+        public splash_screen()
         {
             InitializeComponent();
         }
 
         int progressBarStatus = 0;
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void loading_screen_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+        }
 
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
             progressBarStatus++;
 
             if (progressBarStatus == 100)
             {
-
                 this.Hide();
                 timer1.Stop();
-                main_dashboard_form main_form_object = new main_dashboard_form();
+                choice_form main_form_object = new choice_form();
                 main_form_object.Show();
-               
             }
             else
             {
-                
-                progressBar1.Value = progressBarStatus;
-
+                bunifuProgressBar1.Value = progressBarStatus;
             }
-
-        }
-
-        private void loading_screen_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
         }
     }
 }
