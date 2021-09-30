@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.file_search_txtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.file_browser_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,16 +57,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.stroke_trackBar = new System.Windows.Forms.TrackBar();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.close_btn2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label12 = new System.Windows.Forms.Label();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.search_color_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stroke_trackBar)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,19 +108,19 @@
             this.label1.Text = "Y1 Coordinates";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuImageButton2
+            // file_browser_btn
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(534, 119);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(41, 44);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 13;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
+            this.file_browser_btn.BackColor = System.Drawing.Color.Transparent;
+            this.file_browser_btn.Image = ((System.Drawing.Image)(resources.GetObject("file_browser_btn.Image")));
+            this.file_browser_btn.ImageActive = null;
+            this.file_browser_btn.Location = new System.Drawing.Point(534, 119);
+            this.file_browser_btn.Name = "file_browser_btn";
+            this.file_browser_btn.Size = new System.Drawing.Size(41, 44);
+            this.file_browser_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.file_browser_btn.TabIndex = 13;
+            this.file_browser_btn.TabStop = false;
+            this.file_browser_btn.Zoom = 10;
+            this.file_browser_btn.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // label3
             // 
@@ -393,7 +393,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
             this.panel1.Controls.Add(this.stroke_trackBar);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
-            this.panel1.Controls.Add(this.bunifuImageButton1);
+            this.panel1.Controls.Add(this.search_color_btn);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.opacity_txtbox);
             this.panel1.Controls.Add(this.label11);
@@ -413,7 +413,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
+            this.panel1.Controls.Add(this.file_browser_btn);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.file_search_txtbox);
             this.panel1.Controls.Add(this.label2);
@@ -434,7 +434,7 @@
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton3);
+            this.bunifuGradientPanel1.Controls.Add(this.close_btn2);
             this.bunifuGradientPanel1.Controls.Add(this.label12);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
@@ -451,20 +451,20 @@
             this.bunifuGradientPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseMove);
             this.bunifuGradientPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseUp);
             // 
-            // bunifuImageButton3
+            // close_btn2
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(1195, 0);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(48, 62);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 55;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
-            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            this.close_btn2.BackColor = System.Drawing.Color.Transparent;
+            this.close_btn2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.close_btn2.Image = ((System.Drawing.Image)(resources.GetObject("close_btn2.Image")));
+            this.close_btn2.ImageActive = null;
+            this.close_btn2.Location = new System.Drawing.Point(1195, 0);
+            this.close_btn2.Name = "close_btn2";
+            this.close_btn2.Size = new System.Drawing.Size(48, 62);
+            this.close_btn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_btn2.TabIndex = 55;
+            this.close_btn2.TabStop = false;
+            this.close_btn2.Zoom = 10;
+            this.close_btn2.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // label12
             // 
@@ -479,19 +479,19 @@
             this.label12.Text = "Insert File Data";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bunifuImageButton1
+            // search_color_btn
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1141, 317);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(43, 44);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 51;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.search_color_btn.BackColor = System.Drawing.Color.Transparent;
+            this.search_color_btn.Image = ((System.Drawing.Image)(resources.GetObject("search_color_btn.Image")));
+            this.search_color_btn.ImageActive = null;
+            this.search_color_btn.Location = new System.Drawing.Point(1141, 317);
+            this.search_color_btn.Name = "search_color_btn";
+            this.search_color_btn.Size = new System.Drawing.Size(43, 44);
+            this.search_color_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.search_color_btn.TabIndex = 51;
+            this.search_color_btn.TabStop = false;
+            this.search_color_btn.Zoom = 10;
+            this.search_color_btn.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // groupBox1
             // 
@@ -516,14 +516,14 @@
             this.Name = "features_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "features";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stroke_trackBar)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -534,7 +534,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox file_search_txtbox;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton file_browser_btn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -558,11 +558,11 @@
         private System.Windows.Forms.Button delete_btn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton search_color_btn;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TrackBar stroke_trackBar;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton close_btn2;
 
     }
 }

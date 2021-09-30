@@ -32,9 +32,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.addmore_btn = new System.Windows.Forms.Button();
+            this.static_dynamic_btn = new System.Windows.Forms.Button();
+            this.dynamic_progress_btn = new System.Windows.Forms.Button();
+            this.static_progress_btn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -43,9 +43,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
             this.panel2.Controls.Add(this.bunifuGradientPanel1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.addmore_btn);
+            this.panel2.Controls.Add(this.static_dynamic_btn);
+            this.panel2.Controls.Add(this.dynamic_progress_btn);
+            this.panel2.Controls.Add(this.static_progress_btn);
             this.panel2.Location = new System.Drawing.Point(4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(802, 617);
@@ -85,45 +85,45 @@
             this.label2.Text = "Select an Option";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // static_dynamic_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.button2.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(105, 448);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(606, 116);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Dynamic + Static Process";
-            this.button2.UseVisualStyleBackColor = false;
+            this.static_dynamic_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.static_dynamic_btn.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
+            this.static_dynamic_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.static_dynamic_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.static_dynamic_btn.Location = new System.Drawing.Point(105, 448);
+            this.static_dynamic_btn.Name = "static_dynamic_btn";
+            this.static_dynamic_btn.Size = new System.Drawing.Size(606, 116);
+            this.static_dynamic_btn.TabIndex = 13;
+            this.static_dynamic_btn.Text = "Dynamic + Static Process";
+            this.static_dynamic_btn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // dynamic_progress_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.button1.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(105, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(606, 116);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Dynamic Process";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dynamic_progress_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.dynamic_progress_btn.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
+            this.dynamic_progress_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.dynamic_progress_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dynamic_progress_btn.Location = new System.Drawing.Point(105, 289);
+            this.dynamic_progress_btn.Name = "dynamic_progress_btn";
+            this.dynamic_progress_btn.Size = new System.Drawing.Size(606, 116);
+            this.dynamic_progress_btn.TabIndex = 12;
+            this.dynamic_progress_btn.Text = "Dynamic Process";
+            this.dynamic_progress_btn.UseVisualStyleBackColor = false;
+            this.dynamic_progress_btn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // addmore_btn
+            // static_progress_btn
             // 
-            this.addmore_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.addmore_btn.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
-            this.addmore_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.addmore_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.addmore_btn.Location = new System.Drawing.Point(105, 130);
-            this.addmore_btn.Name = "addmore_btn";
-            this.addmore_btn.Size = new System.Drawing.Size(606, 116);
-            this.addmore_btn.TabIndex = 11;
-            this.addmore_btn.Text = "Static Process";
-            this.addmore_btn.UseVisualStyleBackColor = false;
+            this.static_progress_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.static_progress_btn.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Bold);
+            this.static_progress_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.static_progress_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.static_progress_btn.Location = new System.Drawing.Point(105, 130);
+            this.static_progress_btn.Name = "static_progress_btn";
+            this.static_progress_btn.Size = new System.Drawing.Size(606, 116);
+            this.static_progress_btn.TabIndex = 11;
+            this.static_progress_btn.Text = "Static Process";
+            this.static_progress_btn.UseVisualStyleBackColor = false;
             // 
             // choice_form
             // 
@@ -146,9 +146,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button addmore_btn;
+        private System.Windows.Forms.Button static_dynamic_btn;
+        private System.Windows.Forms.Button dynamic_progress_btn;
+        private System.Windows.Forms.Button static_progress_btn;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label2;
 

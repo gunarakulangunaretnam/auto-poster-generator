@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.splash_screen_progressbar = new Bunifu.Framework.UI.BunifuProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -41,7 +41,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.panel1.Controls.Add(this.bunifuProgressBar1);
+            this.panel1.Controls.Add(this.splash_screen_progressbar);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(4, 5);
@@ -49,18 +49,18 @@
             this.panel1.Size = new System.Drawing.Size(767, 670);
             this.panel1.TabIndex = 0;
             // 
-            // bunifuProgressBar1
+            // splash_screen_progressbar
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.bunifuProgressBar1.BorderRadius = 15;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(37, 589);
-            this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(691, 34);
-            this.bunifuProgressBar1.TabIndex = 10;
-            this.bunifuProgressBar1.Value = 0;
+            this.splash_screen_progressbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.splash_screen_progressbar.BorderRadius = 15;
+            this.splash_screen_progressbar.Location = new System.Drawing.Point(37, 589);
+            this.splash_screen_progressbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.splash_screen_progressbar.MaximumValue = 100;
+            this.splash_screen_progressbar.Name = "splash_screen_progressbar";
+            this.splash_screen_progressbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.splash_screen_progressbar.Size = new System.Drawing.Size(691, 34);
+            this.splash_screen_progressbar.TabIndex = 10;
+            this.splash_screen_progressbar.Value = 0;
             // 
             // pictureBox1
             // 
@@ -115,7 +115,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
+        private Bunifu.Framework.UI.BunifuProgressBar splash_screen_progressbar;
 
     }
 }

@@ -37,7 +37,7 @@ namespace Auto_Poster_Generator
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void input_data_btn_Click(object sender, EventArgs e)
         {
             features_form features_form_obj = new features_form();
             features_form_obj.Show();

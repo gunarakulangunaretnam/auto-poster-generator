@@ -37,7 +37,7 @@ namespace Auto_Poster_Generator
             }
             else
             {
-                bunifuProgressBar1.Value = progressBarStatus;
+                splash_screen_progressbar.Value = progressBarStatus;
             }
         }
     }

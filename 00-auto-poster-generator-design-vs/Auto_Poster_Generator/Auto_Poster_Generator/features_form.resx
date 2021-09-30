@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuImageButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="file_browser_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAYZJREFUWEft
         lM9Kw0AQxvXmRUEQ9CDevQgq+Ac86NMJ3vURxDdQ+gxesklE8VAPepUgzW4DhXEy+drSuht326an/OBj
@@ -141,7 +141,7 @@
         WV064axHOuOsZ7rgrFd9xVnv+oazPrnDWd98x1m/3OPb8wfNkXQrWAl+JwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuImageButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="close_btn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABFJJREFUaEPt
         mcmrFEccx5/GiEQR4hLjzSUEDXrWk3jKQSXGJahglpOiRlA8uJzcjRsEQk7uHj1E3MFL/oGgTnePzy1x
@@ -165,7 +165,7 @@
         eA2/bb2Y6/ks9VKXLl2y0tPzHkIn5uu43VnDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="search_color_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAz1JREFUWEft
         V8lqVEEUbeM84LxxQBfiSlEEQVEMKDgi4he48R/EYEBBwUVw1o2C4FbELxBN1CQoguk3RBMxiYmCGE00
