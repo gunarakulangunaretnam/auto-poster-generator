@@ -47,6 +47,7 @@
             this.track_red = new Bunifu.Framework.UI.BunifuTrackbar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.input_data_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn4)).BeginInit();
@@ -55,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.input_data_btn);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.rgb_txtbox);
             this.panel1.Controls.Add(this.lbl_blue);
@@ -67,9 +69,9 @@
             this.panel1.Controls.Add(this.track_green);
             this.panel1.Controls.Add(this.track_red);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(6, 7);
+            this.panel1.Location = new System.Drawing.Point(8, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 361);
+            this.panel1.Size = new System.Drawing.Size(427, 414);
             this.panel1.TabIndex = 0;
             // 
             // bunifuGradientPanel1
@@ -88,7 +90,7 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 20;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(431, 46);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(427, 46);
             this.bunifuGradientPanel1.TabIndex = 20;
             this.bunifuGradientPanel1.Click += new System.EventHandler(this.bunifuGradientPanel1_Click);
             this.bunifuGradientPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuGradientPanel1_MouseDown);
@@ -101,7 +103,7 @@
             this.close_btn4.Dock = System.Windows.Forms.DockStyle.Right;
             this.close_btn4.Image = ((System.Drawing.Image)(resources.GetObject("close_btn4.Image")));
             this.close_btn4.ImageActive = null;
-            this.close_btn4.Location = new System.Drawing.Point(397, 0);
+            this.close_btn4.Location = new System.Drawing.Point(393, 0);
             this.close_btn4.Name = "close_btn4";
             this.close_btn4.Size = new System.Drawing.Size(32, 44);
             this.close_btn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -284,17 +286,32 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // input_data_btn
+            // 
+            this.input_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.input_data_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.input_data_btn.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input_data_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.input_data_btn.Location = new System.Drawing.Point(310, 370);
+            this.input_data_btn.Name = "input_data_btn";
+            this.input_data_btn.Size = new System.Drawing.Size(112, 35);
+            this.input_data_btn.TabIndex = 21;
+            this.input_data_btn.Text = "Done";
+            this.input_data_btn.UseVisualStyleBackColor = false;
+            this.input_data_btn.Click += new System.EventHandler(this.input_data_btn_Click);
+            // 
             // color_picker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.ClientSize = new System.Drawing.Size(443, 373);
+            this.ClientSize = new System.Drawing.Size(443, 430);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "color_picker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "color_picker";
+            this.Load += new System.EventHandler(this.color_picker_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -323,5 +340,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuImageButton close_btn4;
+        private System.Windows.Forms.Button input_data_btn;
     }
 }

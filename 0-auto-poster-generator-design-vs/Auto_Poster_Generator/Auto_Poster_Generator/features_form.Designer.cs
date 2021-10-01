@@ -323,6 +323,7 @@
             this.color_txtbox.Size = new System.Drawing.Size(278, 29);
             this.color_txtbox.TabIndex = 43;
             this.color_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.color_txtbox.TextChanged += new System.EventHandler(this.color_txtbox_TextChanged);
             // 
             // label11
             // 
@@ -516,6 +517,7 @@
             this.Name = "features_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "features";
+            this.Load += new System.EventHandler(this.features_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

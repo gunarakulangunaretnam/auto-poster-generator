@@ -12,6 +12,9 @@ namespace Auto_Poster_Generator
 {
     public partial class color_picker : Form
     {
+        
+        public static string globalRGBvalue = "";
+
         public color_picker()
         {
             InitializeComponent();
@@ -34,7 +37,10 @@ namespace Auto_Poster_Generator
             lbl_green.Text = track_green.Value.ToString();
             lbl_blue.Text = track_blue.Value.ToString();
 
-            rgb_txtbox.Text = "(" + track_red.Value.ToString() + ", " + track_green.Value.ToString() + ", " + track_blue.Value.ToString() + ")";
+            globalRGBvalue = "(" + track_red.Value.ToString() + ", " + track_green.Value.ToString() + ", " + track_blue.Value.ToString() + ")";
+        
+            rgb_txtbox.Text = globalRGBvalue;
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -63,7 +69,18 @@ namespace Auto_Poster_Generator
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void color_picker_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+        }
+
+        private void input_data_btn_Click(object sender, EventArgs e)
+        {
             this.Close();
+            
         }
     }
 }

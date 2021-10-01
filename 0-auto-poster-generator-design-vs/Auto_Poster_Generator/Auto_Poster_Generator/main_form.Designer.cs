@@ -33,14 +33,15 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.insert_img_btn = new System.Windows.Forms.Button();
             this.template_pic_box = new System.Windows.Forms.PictureBox();
-            this.browser_btn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.file_search_txtbox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.file_search_txtbox = new System.Windows.Forms.TextBox();
+            this.browser_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.input_data_btn = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.close_btn1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.template_pic_box)).BeginInit();
@@ -56,15 +57,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.input_data_btn);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel1.Location = new System.Drawing.Point(5, 5);
+            this.panel1.Location = new System.Drawing.Point(8, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1722, 788);
+            this.panel1.Size = new System.Drawing.Size(1717, 783);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // groupBox1
             // 
@@ -72,12 +75,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.insert_img_btn);
             this.groupBox1.Controls.Add(this.template_pic_box);
-            this.groupBox1.Controls.Add(this.browser_btn);
-            this.groupBox1.Controls.Add(this.file_search_txtbox);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(294, 120);
+            this.groupBox1.Controls.Add(this.file_search_txtbox);
+            this.groupBox1.Controls.Add(this.browser_btn);
+            this.groupBox1.Location = new System.Drawing.Point(294, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1127, 291);
+            this.groupBox1.Size = new System.Drawing.Size(1122, 332);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
@@ -89,54 +92,25 @@
             this.insert_img_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.insert_img_btn.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.insert_img_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.insert_img_btn.Location = new System.Drawing.Point(593, 211);
+            this.insert_img_btn.Location = new System.Drawing.Point(513, 245);
             this.insert_img_btn.Name = "insert_img_btn";
             this.insert_img_btn.Size = new System.Drawing.Size(208, 44);
             this.insert_img_btn.TabIndex = 18;
             this.insert_img_btn.Text = "Insert Image";
             this.insert_img_btn.UseVisualStyleBackColor = false;
+            this.insert_img_btn.Click += new System.EventHandler(this.insert_img_btn_Click);
             // 
             // template_pic_box
             // 
             this.template_pic_box.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.template_pic_box.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.template_pic_box.Location = new System.Drawing.Point(848, 42);
+            this.template_pic_box.Location = new System.Drawing.Point(748, 49);
             this.template_pic_box.Name = "template_pic_box";
-            this.template_pic_box.Size = new System.Drawing.Size(216, 213);
+            this.template_pic_box.Size = new System.Drawing.Size(349, 240);
+            this.template_pic_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.template_pic_box.TabIndex = 17;
             this.template_pic_box.TabStop = false;
-            // 
-            // browser_btn
-            // 
-            this.browser_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.browser_btn.BackColor = System.Drawing.Color.Transparent;
-            this.browser_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.browser_btn.Image = ((System.Drawing.Image)(resources.GetObject("browser_btn.Image")));
-            this.browser_btn.ImageActive = null;
-            this.browser_btn.Location = new System.Drawing.Point(749, 79);
-            this.browser_btn.Name = "browser_btn";
-            this.browser_btn.Size = new System.Drawing.Size(52, 56);
-            this.browser_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.browser_btn.TabIndex = 16;
-            this.browser_btn.TabStop = false;
-            this.browser_btn.Zoom = 10;
-            this.browser_btn.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // file_search_txtbox
-            // 
-            this.file_search_txtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.file_search_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.file_search_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
-            this.file_search_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.file_search_txtbox.Location = new System.Drawing.Point(373, 44);
-            this.file_search_txtbox.Multiline = true;
-            this.file_search_txtbox.Name = "file_search_txtbox";
-            this.file_search_txtbox.Size = new System.Drawing.Size(428, 29);
-            this.file_search_txtbox.TabIndex = 15;
-            this.file_search_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -146,12 +120,43 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.label2.Location = new System.Drawing.Point(50, 42);
+            this.label2.Location = new System.Drawing.Point(17, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 26);
             this.label2.TabIndex = 14;
             this.label2.Text = "Template";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // file_search_txtbox
+            // 
+            this.file_search_txtbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.file_search_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.file_search_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.file_search_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
+            this.file_search_txtbox.Location = new System.Drawing.Point(321, 50);
+            this.file_search_txtbox.Multiline = true;
+            this.file_search_txtbox.Name = "file_search_txtbox";
+            this.file_search_txtbox.Size = new System.Drawing.Size(400, 29);
+            this.file_search_txtbox.TabIndex = 15;
+            this.file_search_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // browser_btn
+            // 
+            this.browser_btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.browser_btn.BackColor = System.Drawing.Color.Transparent;
+            this.browser_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.browser_btn.Image = ((System.Drawing.Image)(resources.GetObject("browser_btn.Image")));
+            this.browser_btn.ImageActive = null;
+            this.browser_btn.Location = new System.Drawing.Point(669, 104);
+            this.browser_btn.Name = "browser_btn";
+            this.browser_btn.Size = new System.Drawing.Size(52, 56);
+            this.browser_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.browser_btn.TabIndex = 16;
+            this.browser_btn.TabStop = false;
+            this.browser_btn.Zoom = 10;
+            this.browser_btn.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // input_data_btn
             // 
@@ -182,8 +187,9 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 20;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1722, 64);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1717, 64);
             this.bunifuGradientPanel1.TabIndex = 3;
+            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
             // close_btn1
             // 
@@ -191,7 +197,7 @@
             this.close_btn1.Dock = System.Windows.Forms.DockStyle.Right;
             this.close_btn1.Image = ((System.Drawing.Image)(resources.GetObject("close_btn1.Image")));
             this.close_btn1.ImageActive = null;
-            this.close_btn1.Location = new System.Drawing.Point(1672, 0);
+            this.close_btn1.Location = new System.Drawing.Point(1667, 0);
             this.close_btn1.Name = "close_btn1";
             this.close_btn1.Size = new System.Drawing.Size(48, 62);
             this.close_btn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -218,14 +224,29 @@
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
             this.dataGridView1.Location = new System.Drawing.Point(156, 512);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1414, 240);
+            this.dataGridView1.Size = new System.Drawing.Size(1409, 235);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.button1.Location = new System.Drawing.Point(366, 462);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 44);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Input Data";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // main_form
             // 
@@ -240,6 +261,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.main_form_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -260,14 +282,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button input_data_btn;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private Bunifu.Framework.UI.BunifuImageButton close_btn1;
         private System.Windows.Forms.Button insert_img_btn;
         private System.Windows.Forms.PictureBox template_pic_box;
-        private Bunifu.Framework.UI.BunifuImageButton browser_btn;
-        private System.Windows.Forms.TextBox file_search_txtbox;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuImageButton close_btn1;
-
+        private System.Windows.Forms.TextBox file_search_txtbox;
+        private Bunifu.Framework.UI.BunifuImageButton browser_btn;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

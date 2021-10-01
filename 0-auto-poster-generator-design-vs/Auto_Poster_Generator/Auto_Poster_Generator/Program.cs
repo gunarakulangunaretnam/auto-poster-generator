@@ -16,7 +16,7 @@ namespace Auto_Poster_Generator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new splash_screen());
+            Application.Run(new main_form());
         }
     }
 }

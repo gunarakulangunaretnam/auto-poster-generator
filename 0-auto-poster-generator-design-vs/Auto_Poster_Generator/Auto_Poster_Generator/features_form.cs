@@ -33,7 +33,10 @@ namespace Auto_Poster_Generator
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             color_picker color_picker1 = new color_picker();
-            color_picker1.Show();
+            color_picker1.ShowDialog();
+            color_txtbox.Text = color_picker.globalRGBvalue;
+           
+
         }
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
@@ -63,8 +66,18 @@ namespace Auto_Poster_Generator
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
+        private void features_form_Load(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+            
+        }
+
+        private void color_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

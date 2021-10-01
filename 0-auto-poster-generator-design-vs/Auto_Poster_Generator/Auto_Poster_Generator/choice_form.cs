@@ -44,7 +44,7 @@ namespace Auto_Poster_Generator
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
