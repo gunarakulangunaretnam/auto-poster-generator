@@ -61,7 +61,11 @@ namespace Auto_Poster_Generator
         private void input_data_btn_Click(object sender, EventArgs e)
         {
             features_form features_form_obj = new features_form();
-            features_form_obj.Show();
+            features_form_obj.ShowDialog();
+            table.Rows.Add(features_form.data_file_path, features_form.y1Cor, features_form.y2Cor, features_form.x1Cor, features_form.x2Cor, features_form.font_family, features_form.font_size, features_form.text_align, features_form.text_stroke, features_form.text_color, features_form.text_opacity);
+
+
+
         }
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -100,13 +104,12 @@ namespace Auto_Poster_Generator
 
         private void main_form_Load(object sender, EventArgs e)
         {
-           
             dataTable();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //table.Rows.Add("kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd");
+            table.Rows.Add("kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd");
         }
     }
 }

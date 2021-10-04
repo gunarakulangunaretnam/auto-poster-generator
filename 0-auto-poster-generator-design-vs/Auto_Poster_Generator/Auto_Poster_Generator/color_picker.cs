@@ -82,5 +82,10 @@ namespace Auto_Poster_Generator
             this.Close();
             
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

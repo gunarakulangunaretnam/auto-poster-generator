@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(color_picker));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.input_data_btn = new System.Windows.Forms.Button();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.close_btn4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.track_red = new Bunifu.Framework.UI.BunifuTrackbar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.input_data_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn4)).BeginInit();
@@ -73,6 +73,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(427, 414);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // input_data_btn
+            // 
+            this.input_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.input_data_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.input_data_btn.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.input_data_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.input_data_btn.Location = new System.Drawing.Point(310, 370);
+            this.input_data_btn.Name = "input_data_btn";
+            this.input_data_btn.Size = new System.Drawing.Size(112, 35);
+            this.input_data_btn.TabIndex = 21;
+            this.input_data_btn.Text = "Done";
+            this.input_data_btn.UseVisualStyleBackColor = false;
+            this.input_data_btn.Click += new System.EventHandler(this.input_data_btn_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -285,20 +300,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // input_data_btn
-            // 
-            this.input_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.input_data_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.input_data_btn.Font = new System.Drawing.Font("Cambria", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input_data_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.input_data_btn.Location = new System.Drawing.Point(310, 370);
-            this.input_data_btn.Name = "input_data_btn";
-            this.input_data_btn.Size = new System.Drawing.Size(112, 35);
-            this.input_data_btn.TabIndex = 21;
-            this.input_data_btn.Text = "Done";
-            this.input_data_btn.UseVisualStyleBackColor = false;
-            this.input_data_btn.Click += new System.EventHandler(this.input_data_btn_Click);
             // 
             // color_picker
             // 
