@@ -41,7 +41,7 @@ namespace Auto_Poster_Generator
 
             opf.Filter = "Database files (*.txt)|*.txt";
             opf.FilterIndex = 0;
-      
+
 
             if (opf.ShowDialog() == DialogResult.OK)
             {
@@ -54,7 +54,7 @@ namespace Auto_Poster_Generator
             color_picker color_picker1 = new color_picker();
             color_picker1.ShowDialog();
             color_txtbox.Text = color_picker.globalRGBvalue;
-           
+
 
         }
         private void bunifuImageButton3_Click(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace Auto_Poster_Generator
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void features_form_Load(object sender, EventArgs e)
@@ -93,14 +93,14 @@ namespace Auto_Poster_Generator
             this.TopMost = true;
 
             string[] files = Directory.GetFiles("fonts", "*", SearchOption.AllDirectories);
-            
+
             foreach (string file_name in files)
             {
 
-                List<string> file_name_list = new List<string>(file_name.Split(new string[] { "\\" , "."}, StringSplitOptions.None));
+                List<string> file_name_list = new List<string>(file_name.Split(new string[] { "\\", "." }, StringSplitOptions.None));
 
                 //MessageBox.Show(file_name_list[1].ToString());
-                
+
                 //insert file names into combo box
                 font_family_combobox.Items.Add(file_name_list[1]);
             }
@@ -109,7 +109,7 @@ namespace Auto_Poster_Generator
 
         private void color_txtbox_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -119,19 +119,28 @@ namespace Auto_Poster_Generator
 
         private void add_btn_Click(object sender, EventArgs e)
         {
-            data_file_path = file_search_txtbox.Text;
-            y1Cor = y1_txtbox.Text;
-            y2Cor = y2_txtbox.Text;
-            x1Cor = x1_txtbox.Text;
-            x2Cor = x2_txtbox.Text;
-            font_family = font_family_combobox.Text;
-            font_size = fontsize_txtbox.Text;
-            text_align = align_combobox.Text;
-            text_stroke = stroke_trackBar.Value.ToString();
-            text_color = color_txtbox.Text;
-            text_opacity = opacity_trackbar.Value.ToString();
+            if (file_search_txtbox.Text != "" && y1_txtbox.Text != "" && y2_txtbox.Text != "" && x1_txtbox.Text != "" && x2_txtbox.Text != "" && font_family_combobox.Text != "" && fontsize_txtbox.Text != "" && align_combobox.Text != "" && color_txtbox.Text != "") {
 
-            this.Close();
+                data_file_path = file_search_txtbox.Text;
+                y1Cor = y1_txtbox.Text;
+                y2Cor = y2_txtbox.Text;
+                x1Cor = x1_txtbox.Text;
+                x2Cor = x2_txtbox.Text;
+                font_family = font_family_combobox.Text;
+                font_size = fontsize_txtbox.Text;
+                text_align = align_combobox.Text;
+                text_stroke = stroke_trackBar.Value.ToString();
+                text_color = color_txtbox.Text;
+                text_opacity = opacity_trackbar.Value.ToString();
+
+                this.Close();
+
+            } else {
+
+                MessageBox.Show("Please fill all fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+
         }
 
         private void font_family_combobox_SelectedIndexChanged(object sender, EventArgs e)
