@@ -62,11 +62,22 @@ namespace Auto_Poster_Generator
 
         private void input_data_btn_Click(object sender, EventArgs e)
         {
-            features_form features_form_obj = new features_form();
-            features_form_obj.ShowDialog();
-            table.Rows.Add(features_form.data_file_path, features_form.y1Cor, features_form.y2Cor, features_form.x1Cor, features_form.x2Cor, features_form.font_family, features_form.font_size, features_form.text_align, features_form.text_stroke, features_form.text_color, features_form.text_opacity);
+
+            if (file_search_txtbox.Text != "")
+            {
+
+                features_form features_form_obj = new features_form();
+                features_form_obj.ShowDialog();
+                table.Rows.Add(features_form.data_file_path, features_form.y1Cor, features_form.y2Cor, features_form.x1Cor, features_form.x2Cor, features_form.font_family, features_form.font_size, features_form.text_align, features_form.text_stroke, features_form.text_color, features_form.text_opacity);
 
 
+            }
+            else {
+
+                MessageBox.Show("Please select a template", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            
 
         }
 
@@ -131,18 +142,28 @@ namespace Auto_Poster_Generator
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            if (data_gridview_cell_index != "")
+
+            if (file_search_txtbox.Text != "")
             {
-                try
+                if (data_gridview_cell_index != "")
                 {
-                    dataGridView1.Rows.RemoveAt(Convert.ToInt32(data_gridview_cell_index));
+                    try
+                    {
+                        dataGridView1.Rows.RemoveAt(Convert.ToInt32(data_gridview_cell_index));
+                    }
+                    catch (Exception err)
+                    {
+
+                    }
                 }
-                catch (Exception err)
-                {
-                   
-                }
-                
+
             }
+            else
+            {
+                MessageBox.Show("Please select a template", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            
         }
     }
 }

@@ -137,6 +137,7 @@
             this.file_search_txtbox.Location = new System.Drawing.Point(321, 50);
             this.file_search_txtbox.Multiline = true;
             this.file_search_txtbox.Name = "file_search_txtbox";
+            this.file_search_txtbox.ReadOnly = true;
             this.file_search_txtbox.Size = new System.Drawing.Size(400, 29);
             this.file_search_txtbox.TabIndex = 15;
             this.file_search_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
