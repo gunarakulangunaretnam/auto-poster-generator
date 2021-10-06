@@ -98,8 +98,10 @@ namespace Auto_Poster_Generator
 
                 List<string> file_name_list = new List<string>(file_name.Split(new string[] { "\\" , "."}, StringSplitOptions.None));
 
-                MessageBox.Show(file_name_list[1].ToString());
-
+                //MessageBox.Show(file_name_list[1].ToString());
+                
+                //insert file names into combo box
+                font_family_combobox.Items.Add(file_name_list[1]);
             }
 
         }
