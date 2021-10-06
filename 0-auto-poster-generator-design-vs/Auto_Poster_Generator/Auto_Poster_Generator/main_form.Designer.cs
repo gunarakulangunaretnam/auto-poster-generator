@@ -42,6 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.template_pic_box)).BeginInit();
@@ -57,6 +58,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.input_data_btn);
@@ -78,7 +80,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.file_search_txtbox);
             this.groupBox1.Controls.Add(this.browser_btn);
-            this.groupBox1.Location = new System.Drawing.Point(294, 110);
+            this.groupBox1.Location = new System.Drawing.Point(294, 96);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1122, 332);
             this.groupBox1.TabIndex = 14;
@@ -165,7 +167,7 @@
             this.input_data_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.input_data_btn.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.input_data_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.input_data_btn.Location = new System.Drawing.Point(156, 462);
+            this.input_data_btn.Location = new System.Drawing.Point(156, 451);
             this.input_data_btn.Name = "input_data_btn";
             this.input_data_btn.Size = new System.Drawing.Size(162, 44);
             this.input_data_btn.TabIndex = 13;
@@ -229,11 +231,11 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.dataGridView1.Location = new System.Drawing.Point(156, 512);
+            this.dataGridView1.Location = new System.Drawing.Point(156, 504);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1409, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(1409, 214);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -244,13 +246,26 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button1.Location = new System.Drawing.Point(343, 462);
+            this.button1.Location = new System.Drawing.Point(343, 451);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(162, 44);
             this.button1.TabIndex = 15;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.button2.Location = new System.Drawing.Point(1229, 727);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(336, 44);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Start Processing";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // main_form
             // 
@@ -294,6 +309,7 @@
         private Bunifu.Framework.UI.BunifuImageButton browser_btn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
