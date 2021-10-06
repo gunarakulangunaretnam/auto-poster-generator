@@ -58,12 +58,14 @@
             this.close_btn2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label12 = new System.Windows.Forms.Label();
             this.search_color_btn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stroke_trackBar)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -180,6 +182,7 @@
             this.font_family_combobox.Name = "font_family_combobox";
             this.font_family_combobox.Size = new System.Drawing.Size(278, 34);
             this.font_family_combobox.TabIndex = 5;
+            this.font_family_combobox.SelectedIndexChanged += new System.EventHandler(this.font_family_combobox_SelectedIndexChanged);
             // 
             // y1_txtbox
             // 
@@ -352,7 +355,7 @@
             this.add_btn.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.add_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.add_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.add_btn.Location = new System.Drawing.Point(1089, 603);
+            this.add_btn.Location = new System.Drawing.Point(48, 32);
             this.add_btn.Name = "add_btn";
             this.add_btn.Size = new System.Drawing.Size(140, 44);
             this.add_btn.TabIndex = 47;
@@ -363,7 +366,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.panel1.Controls.Add(this.add_btn);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.stroke_trackBar);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.search_color_btn);
@@ -466,6 +469,15 @@
             this.search_color_btn.Zoom = 10;
             this.search_color_btn.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.add_btn);
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.panel2.Location = new System.Drawing.Point(995, 535);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(232, 107);
+            this.panel2.TabIndex = 53;
+            // 
             // features_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -486,6 +498,7 @@
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -521,6 +534,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TrackBar stroke_trackBar;
         private Bunifu.Framework.UI.BunifuImageButton close_btn2;
+        private System.Windows.Forms.Panel panel2;
 
     }
 }

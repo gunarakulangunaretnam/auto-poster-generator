@@ -93,15 +93,13 @@ namespace Auto_Poster_Generator
 
             string[] files = Directory.GetFiles("fonts", "*", SearchOption.AllDirectories);
             
-           
-
-
             foreach (string file_name in files)
             {
 
-                List<string> file_name_list = new List<string>(file_name.Split(new string[] { "\\" }, StringSplitOptions.None));
+                List<string> file_name_list = new List<string>(file_name.Split(new string[] { "\\" , "."}, StringSplitOptions.None));
+
                 MessageBox.Show(file_name_list[1].ToString());
-                //font_family_combobox.Items.Add();
+
             }
 
         }
@@ -131,6 +129,11 @@ namespace Auto_Poster_Generator
             text_opacity = opacity_txtbox.Text;
 
             this.Close();
+        }
+
+        private void font_family_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
