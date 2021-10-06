@@ -50,22 +50,25 @@
             this.label10 = new System.Windows.Forms.Label();
             this.color_txtbox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.opacity_txtbox = new System.Windows.Forms.TextBox();
             this.add_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.stroke_opacity = new System.Windows.Forms.Label();
+            this.opacity_trackbar = new System.Windows.Forms.TrackBar();
+            this.stroke_display = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.stroke_trackBar = new System.Windows.Forms.TrackBar();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.close_btn2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label12 = new System.Windows.Forms.Label();
             this.search_color_btn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opacity_trackbar)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stroke_trackBar)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -89,6 +92,7 @@
             this.file_search_txtbox.Location = new System.Drawing.Point(250, 119);
             this.file_search_txtbox.Multiline = true;
             this.file_search_txtbox.Name = "file_search_txtbox";
+            this.file_search_txtbox.ReadOnly = true;
             this.file_search_txtbox.Size = new System.Drawing.Size(278, 29);
             this.file_search_txtbox.TabIndex = 0;
             this.file_search_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -175,6 +179,7 @@
             // font_family_combobox
             // 
             this.font_family_combobox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.font_family_combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.font_family_combobox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.font_family_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
             this.font_family_combobox.FormattingEnabled = true;
@@ -195,6 +200,7 @@
             this.y1_txtbox.Size = new System.Drawing.Size(278, 29);
             this.y1_txtbox.TabIndex = 1;
             this.y1_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.y1_txtbox.TextChanged += new System.EventHandler(this.y1_txtbox_TextChanged_1);
             // 
             // y2_txtbox
             // 
@@ -207,6 +213,7 @@
             this.y2_txtbox.Size = new System.Drawing.Size(278, 29);
             this.y2_txtbox.TabIndex = 2;
             this.y2_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.y2_txtbox.TextChanged += new System.EventHandler(this.y2_txtbox_TextChanged);
             // 
             // x1_txtbox
             // 
@@ -219,6 +226,7 @@
             this.x1_txtbox.Size = new System.Drawing.Size(278, 29);
             this.x1_txtbox.TabIndex = 3;
             this.x1_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.x1_txtbox.TextChanged += new System.EventHandler(this.x1_txtbox_TextChanged);
             // 
             // x2_txtbox
             // 
@@ -231,6 +239,7 @@
             this.x2_txtbox.Size = new System.Drawing.Size(278, 29);
             this.x2_txtbox.TabIndex = 4;
             this.x2_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.x2_txtbox.TextChanged += new System.EventHandler(this.x2_txtbox_TextChanged);
             // 
             // label7
             // 
@@ -256,6 +265,7 @@
             this.fontsize_txtbox.Size = new System.Drawing.Size(278, 29);
             this.fontsize_txtbox.TabIndex = 6;
             this.fontsize_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fontsize_txtbox.TextChanged += new System.EventHandler(this.fontsize_txtbox_TextChanged);
             // 
             // label8
             // 
@@ -273,6 +283,7 @@
             // align_combobox
             // 
             this.align_combobox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.align_combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.align_combobox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.align_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
             this.align_combobox.FormattingEnabled = true;
@@ -319,6 +330,7 @@
             this.color_txtbox.Location = new System.Drawing.Point(857, 323);
             this.color_txtbox.Multiline = true;
             this.color_txtbox.Name = "color_txtbox";
+            this.color_txtbox.ReadOnly = true;
             this.color_txtbox.Size = new System.Drawing.Size(278, 29);
             this.color_txtbox.TabIndex = 43;
             this.color_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -337,18 +349,6 @@
             this.label11.Text = "Text Opacity";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // opacity_txtbox
-            // 
-            this.opacity_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.opacity_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
-            this.opacity_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.opacity_txtbox.Location = new System.Drawing.Point(857, 396);
-            this.opacity_txtbox.Multiline = true;
-            this.opacity_txtbox.Name = "opacity_txtbox";
-            this.opacity_txtbox.Size = new System.Drawing.Size(278, 29);
-            this.opacity_txtbox.TabIndex = 10;
-            this.opacity_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // add_btn
             // 
             this.add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
@@ -366,11 +366,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
+            this.panel1.Controls.Add(this.stroke_opacity);
+            this.panel1.Controls.Add(this.opacity_trackbar);
+            this.panel1.Controls.Add(this.stroke_display);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.stroke_trackBar);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.search_color_btn);
-            this.panel1.Controls.Add(this.opacity_txtbox);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.color_txtbox);
             this.panel1.Controls.Add(this.label10);
@@ -398,12 +400,59 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // stroke_opacity
+            // 
+            this.stroke_opacity.AutoSize = true;
+            this.stroke_opacity.BackColor = System.Drawing.Color.Transparent;
+            this.stroke_opacity.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.stroke_opacity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.stroke_opacity.Location = new System.Drawing.Point(1138, 396);
+            this.stroke_opacity.Name = "stroke_opacity";
+            this.stroke_opacity.Size = new System.Drawing.Size(25, 26);
+            this.stroke_opacity.TabIndex = 56;
+            this.stroke_opacity.Text = "0";
+            this.stroke_opacity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // opacity_trackbar
+            // 
+            this.opacity_trackbar.Location = new System.Drawing.Point(857, 395);
+            this.opacity_trackbar.Maximum = 100;
+            this.opacity_trackbar.Name = "opacity_trackbar";
+            this.opacity_trackbar.Size = new System.Drawing.Size(278, 56);
+            this.opacity_trackbar.TabIndex = 55;
+            this.opacity_trackbar.Value = 100;
+            this.opacity_trackbar.Scroll += new System.EventHandler(this.opacity_trackbar_Scroll);
+            // 
+            // stroke_display
+            // 
+            this.stroke_display.AutoSize = true;
+            this.stroke_display.BackColor = System.Drawing.Color.Transparent;
+            this.stroke_display.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.stroke_display.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.stroke_display.Location = new System.Drawing.Point(1138, 254);
+            this.stroke_display.Name = "stroke_display";
+            this.stroke_display.Size = new System.Drawing.Size(25, 26);
+            this.stroke_display.TabIndex = 54;
+            this.stroke_display.Text = "0";
+            this.stroke_display.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.add_btn);
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.panel2.Location = new System.Drawing.Point(995, 535);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(232, 107);
+            this.panel2.TabIndex = 53;
+            // 
             // stroke_trackBar
             // 
             this.stroke_trackBar.Location = new System.Drawing.Point(857, 252);
             this.stroke_trackBar.Name = "stroke_trackBar";
             this.stroke_trackBar.Size = new System.Drawing.Size(278, 56);
             this.stroke_trackBar.TabIndex = 8;
+            this.stroke_trackBar.Scroll += new System.EventHandler(this.stroke_trackBar_Scroll);
+            this.stroke_trackBar.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.stroke_trackBar_ChangeUICues);
             // 
             // bunifuGradientPanel1
             // 
@@ -469,15 +518,6 @@
             this.search_color_btn.Zoom = 10;
             this.search_color_btn.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.add_btn);
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.panel2.Location = new System.Drawing.Point(995, 535);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(232, 107);
-            this.panel2.TabIndex = 53;
-            // 
             // features_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -493,12 +533,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.file_browser_btn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.opacity_trackbar)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.stroke_trackBar)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close_btn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.search_color_btn)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -526,7 +567,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox color_txtbox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox opacity_txtbox;
         private System.Windows.Forms.Button add_btn;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton search_color_btn;
@@ -535,6 +575,8 @@
         private System.Windows.Forms.TrackBar stroke_trackBar;
         private Bunifu.Framework.UI.BunifuImageButton close_btn2;
         private System.Windows.Forms.Panel panel2;
-
+        private System.Windows.Forms.Label stroke_display;
+        private System.Windows.Forms.Label stroke_opacity;
+        private System.Windows.Forms.TrackBar opacity_trackbar;
     }
 }

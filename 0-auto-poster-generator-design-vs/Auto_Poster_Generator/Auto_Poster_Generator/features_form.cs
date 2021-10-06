@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Auto_Poster_Generator
 {
@@ -113,7 +114,7 @@ namespace Auto_Poster_Generator
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            stroke_opacity.Text = opacity_trackbar.Value.ToString();
         }
 
         private void add_btn_Click(object sender, EventArgs e)
@@ -128,7 +129,7 @@ namespace Auto_Poster_Generator
             text_align = align_combobox.Text;
             text_stroke = stroke_trackBar.Value.ToString();
             text_color = color_txtbox.Text;
-            text_opacity = opacity_txtbox.Text;
+            text_opacity = opacity_trackbar.Value.ToString();
 
             this.Close();
         }
@@ -136,6 +137,59 @@ namespace Auto_Poster_Generator
         private void font_family_combobox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void stroke_trackBar_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void stroke_trackBar_Scroll(object sender, EventArgs e)
+        {
+            stroke_display.Text = stroke_trackBar.Value.ToString();
+        }
+
+        private void opacity_trackbar_Scroll(object sender, EventArgs e)
+        {
+            stroke_opacity.Text = opacity_trackbar.Value.ToString();
+        }
+
+
+        private void y1_txtbox_TextChanged_1(object sender, EventArgs e)
+        {
+            string this_value = y1_txtbox.Text;
+            string result = Regex.Replace(this_value, @"[^\d]", "");
+            y1_txtbox.Text = result;
+
+
+        }
+
+        private void y2_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            string this_value = y2_txtbox.Text;
+            string result = Regex.Replace(this_value, @"[^\d]", "");
+            y2_txtbox.Text = result;
+        }
+
+        private void x1_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            string this_value = x1_txtbox.Text;
+            string result = Regex.Replace(this_value, @"[^\d]", "");
+            x1_txtbox.Text = result;
+        }
+
+        private void x2_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            string this_value = x2_txtbox.Text;
+            string result = Regex.Replace(this_value, @"[^\d]", "");
+            x2_txtbox.Text = result;
+        }
+
+        private void fontsize_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            string this_value = fontsize_txtbox.Text;
+            string result = Regex.Replace(this_value, @"[^\d]", "");
+            fontsize_txtbox.Text = result;
         }
     }
 }

@@ -17,6 +17,8 @@ namespace Auto_Poster_Generator
             InitializeComponent();
         }
 
+        string data_gridview_cell_index = "";
+
         DataTable table = new DataTable();
 
         public void dataTable()
@@ -110,6 +112,37 @@ namespace Auto_Poster_Generator
         private void button1_Click_1(object sender, EventArgs e)
         {
             table.Rows.Add("kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd");
+        }
+
+
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rowindex = dataGridView1.CurrentRow.Index;
+
+            data_gridview_cell_index = rowindex.ToString();
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            if (data_gridview_cell_index != "")
+            {
+                try
+                {
+                    dataGridView1.Rows.RemoveAt(Convert.ToInt32(data_gridview_cell_index));
+                }
+                catch (Exception err)
+                {
+                   
+                }
+                
+            }
         }
     }
 }
