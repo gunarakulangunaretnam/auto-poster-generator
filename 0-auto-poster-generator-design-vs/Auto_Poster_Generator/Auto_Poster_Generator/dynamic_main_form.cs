@@ -196,6 +196,50 @@ namespace Auto_Poster_Generator
         }
 
 
+        public void createConfigFiles(string numberOfItems, string numberOfRow, string templateName)
+        {
+            
+            string fileName = @"dynamic_config.txt";
+
+            File.Delete(fileName);
+
+            if (!File.Exists(fileName))
+            {
+                using (StreamWriter writer = File.CreateText(fileName))
+                {
+                    writer.WriteLine(numberOfItems+" | "+ numberOfRow + " | "+ templateName);
+                }
+            }
+
+           
+        }
+
+
+        public void getConfigFileData() {
+
+            // Get number items in the first file.
+            string firstFileName = dataGridView1.Rows[0].Cells[0].Value.ToString();
+            var lineCount = File.ReadLines(firstFileName).Count();
+            
+
+            // Get number rows
+            string numberOfRows = dataGridView1.Rows.Count.ToString();
+
+            // Get template name
+
+            string fileBaseName = "";
+
+            Uri uri = new Uri(file_search_txtbox.Text);
+
+            if (uri.IsFile) {
+                fileBaseName = System.IO.Path.GetFileName(uri.LocalPath);  
+            }
+
+
+            createConfigFiles(lineCount.ToString(), numberOfRows, fileBaseName);
+        }
+
+
         private void clearFolder(string FolderName)
         {
             DirectoryInfo dir = new DirectoryInfo(FolderName);
@@ -222,11 +266,18 @@ namespace Auto_Poster_Generator
             copyTemplate(); //Copy template.
             copyContentFiles(); // Compy content files.
 
+            getConfigFileData();
+           
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            getConfigFileData();
         }
     }
 }
