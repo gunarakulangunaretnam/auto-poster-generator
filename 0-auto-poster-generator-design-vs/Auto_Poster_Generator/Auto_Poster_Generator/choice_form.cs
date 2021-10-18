@@ -49,7 +49,7 @@ namespace Auto_Poster_Generator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            main_form main_form_obj = new main_form();
+            dynamic_main_form main_form_obj = new dynamic_main_form();
             main_form_obj.Show();
             this.Hide();
         }

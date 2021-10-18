@@ -1,6 +1,6 @@
 ﻿namespace Auto_Poster_Generator
 {
-    partial class main_form
+    partial class dynamic_main_form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dynamic_main_form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.insert_img_btn = new System.Windows.Forms.Button();
             this.template_pic_box = new System.Windows.Forms.PictureBox();
@@ -41,8 +43,6 @@
             this.close_btn1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.template_pic_box)).BeginInit();
@@ -71,6 +71,34 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.button2.Location = new System.Drawing.Point(530, 451);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(336, 44);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Start Processing";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
+            this.button1.Location = new System.Drawing.Point(342, 451);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 44);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Delete";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -85,6 +113,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1122, 332);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // insert_img_btn
             // 
@@ -224,6 +253,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -231,43 +264,16 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.dataGridView1.Location = new System.Drawing.Point(156, 504);
+            this.dataGridView1.Location = new System.Drawing.Point(156, 506);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1409, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(1409, 263);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button1.Location = new System.Drawing.Point(343, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 44);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button2.Location = new System.Drawing.Point(1229, 727);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(336, 44);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Start Processing";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // main_form
+            // dynamic_main_form
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
@@ -276,7 +282,7 @@
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "main_form";
+            this.Name = "dynamic_main_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

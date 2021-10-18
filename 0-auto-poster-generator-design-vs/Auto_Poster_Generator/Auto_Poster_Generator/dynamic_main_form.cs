@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Auto_Poster_Generator
 {
-    public partial class main_form : Form
+    public partial class dynamic_main_form : Form
     {
-        public main_form()
+        public dynamic_main_form()
         {
             InitializeComponent();
         }
@@ -23,8 +24,6 @@ namespace Auto_Poster_Generator
 
         public void dataTable()
         {
-
-            
             table.Columns.Add("Import File");
             table.Columns.Add("Y1 Coordinates");
             table.Columns.Add("Y2 Coordinates");
@@ -42,7 +41,7 @@ namespace Auto_Poster_Generator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            features_form features1 = new features_form();
+            dynamic_features_form features1 = new dynamic_features_form();
             features1.Show();
         }
 
@@ -54,6 +53,9 @@ namespace Auto_Poster_Generator
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
+
+            opf.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;";
+
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 file_search_txtbox.Text = opf.FileName;
@@ -66,10 +68,14 @@ namespace Auto_Poster_Generator
             if (file_search_txtbox.Text != "")
             {
 
-                features_form features_form_obj = new features_form();
+                dynamic_features_form features_form_obj = new dynamic_features_form();
                 features_form_obj.ShowDialog();
-                table.Rows.Add(features_form.data_file_path, features_form.y1Cor, features_form.y2Cor, features_form.x1Cor, features_form.x2Cor, features_form.font_family, features_form.font_size, features_form.text_align, features_form.text_stroke, features_form.text_color, features_form.text_opacity);
 
+                if (dynamic_features_form.data_file_path != "" && dynamic_features_form.y1Cor != "" && dynamic_features_form.y2Cor != "" && dynamic_features_form.x2Cor != "" && dynamic_features_form.font_family != "" && dynamic_features_form.font_size != "" && dynamic_features_form.text_align != "" && dynamic_features_form.text_stroke != "" && dynamic_features_form.text_color != "" && dynamic_features_form.text_opacity != "") {
+
+                    table.Rows.Add(dynamic_features_form.data_file_path, dynamic_features_form.y1Cor, dynamic_features_form.y2Cor, dynamic_features_form.x1Cor, dynamic_features_form.x2Cor, dynamic_features_form.font_family, dynamic_features_form.font_size, dynamic_features_form.text_align, dynamic_features_form.text_stroke, dynamic_features_form.text_color, dynamic_features_form.text_opacity);
+
+                }
 
             }
             else {
@@ -120,11 +126,6 @@ namespace Auto_Poster_Generator
             dataTable();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            table.Rows.Add("kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd", "dsds", "kdjsd");
-        }
-
 
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -143,27 +144,89 @@ namespace Auto_Poster_Generator
         private void button1_Click_2(object sender, EventArgs e)
         {
 
-            if (file_search_txtbox.Text != "")
+            DialogResult dialogResult = MessageBox.Show("Do you want to remove this row number ("+ data_gridview_cell_index + 1 + ")?", "Comfirmation", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                if (data_gridview_cell_index != "")
+                if (file_search_txtbox.Text != "")
                 {
-                    try
+                    if (data_gridview_cell_index != "")
                     {
-                        dataGridView1.Rows.RemoveAt(Convert.ToInt32(data_gridview_cell_index));
-                    }
-                    catch (Exception err)
-                    {
+                        try
+                        {
+                            dataGridView1.Rows.RemoveAt(Convert.ToInt32(data_gridview_cell_index));
+                        }
+                        catch (Exception err)
+                        {
 
+                        }
                     }
+
+                }
+                else
+                {
+                    MessageBox.Show("Please select a template", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 }
 
             }
-            else
-            {
-                MessageBox.Show("Please select a template", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
             
+        }
+
+       
+        public void copyTemplate() {
+
+            string fileToCopy = file_search_txtbox.Text;
+            string destinationDirectory = "dynamic-template-image/";
+
+            File.Copy(fileToCopy, destinationDirectory + Path.GetFileName(fileToCopy));
+
+        }
+
+        public void copyContentFiles() {
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                string fileToCopy = row.Cells["Import File"].Value.ToString();
+                string destinationDirectory = "dynamic-content-files/";
+                File.Copy(fileToCopy, destinationDirectory + Path.GetFileName(fileToCopy));
+               
+            }
+
+
+        }
+
+
+        private void clearFolder(string FolderName)
+        {
+            DirectoryInfo dir = new DirectoryInfo(FolderName);
+
+            foreach (FileInfo fi in dir.GetFiles())
+            {
+                fi.Delete();
+            }
+
+            foreach (DirectoryInfo di in dir.GetDirectories())
+            {
+                clearFolder(di.FullName);
+                di.Delete();
+            }
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            clearFolder("dynamic-content-files/");
+            clearFolder("dynamic-template-image/");
+            clearFolder("dynamic-generated-images/");
+
+            copyTemplate(); //Copy template.
+            copyContentFiles(); // Compy content files.
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

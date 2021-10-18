@@ -1,6 +1,6 @@
 ﻿namespace Auto_Poster_Generator
 {
-    partial class features_form
+    partial class dynamic_features_form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(features_form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dynamic_features_form));
             this.label2 = new System.Windows.Forms.Label();
             this.file_search_txtbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();

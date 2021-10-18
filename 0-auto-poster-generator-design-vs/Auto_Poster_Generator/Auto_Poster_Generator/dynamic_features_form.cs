@@ -12,9 +12,9 @@ using System.Text.RegularExpressions;
 
 namespace Auto_Poster_Generator
 {
-    public partial class features_form : Form
+    public partial class dynamic_features_form : Form
     {
-        public features_form()
+        public dynamic_features_form()
         {
             InitializeComponent();
         }
