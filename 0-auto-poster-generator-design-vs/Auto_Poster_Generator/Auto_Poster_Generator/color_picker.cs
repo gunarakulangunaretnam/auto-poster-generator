@@ -37,7 +37,7 @@ namespace Auto_Poster_Generator
             lbl_green.Text = track_green.Value.ToString();
             lbl_blue.Text = track_blue.Value.ToString();
 
-            globalRGBvalue = "(" + track_red.Value.ToString() + ", " + track_green.Value.ToString() + ", " + track_blue.Value.ToString() + ")";
+            globalRGBvalue = track_red.Value.ToString() + ", " + track_green.Value.ToString() + ", " + track_blue.Value.ToString();
         
             rgb_txtbox.Text = globalRGBvalue;
 

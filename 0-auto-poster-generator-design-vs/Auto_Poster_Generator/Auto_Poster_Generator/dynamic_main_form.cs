@@ -201,13 +201,13 @@ namespace Auto_Poster_Generator
             
             string fileName = @"dynamic_config.txt";
 
-            File.Delete(fileName);
+            File.Delete(fileName); // Delete previous config file
 
             if (!File.Exists(fileName))
             {
                 using (StreamWriter writer = File.CreateText(fileName))
                 {
-                    writer.WriteLine(numberOfItems+" | "+ numberOfRow + " | "+ templateName);
+                    writer.WriteLine(numberOfItems+" | "+ numberOfRow + " | "+ "dynamic-template-image/" + templateName);
                 }
             }
 
@@ -256,6 +256,69 @@ namespace Auto_Poster_Generator
             }
         }
 
+        public void createInputDataFile(string data) {
+
+
+            string fileName = @"dynamic_input_data.txt";
+
+            File.Delete(fileName); // Delete previous config file
+
+            if (!File.Exists(fileName))
+            {
+                using (StreamWriter writer = File.CreateText(fileName))
+                {
+                    writer.WriteLine(data);
+                }
+            }
+
+        }
+
+        public void getInputData() {
+
+            string inputData = "";
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                string importFile = row.Cells["Import File"].Value.ToString();
+                
+                Uri uri = new Uri(importFile);
+
+                if (uri.IsFile)
+                {
+                    importFile = System.IO.Path.GetFileName(uri.LocalPath);
+                }
+
+                importFile = "dynamic-content-files/" + importFile;
+
+                string y1Cor = row.Cells["Y1 Coordinates"].Value.ToString();
+                string y2Cor = row.Cells["Y2 Coordinates"].Value.ToString();
+                string x1Cor = row.Cells["X1 Coordinates"].Value.ToString();
+                string x2Cor = row.Cells["X2 Coordinates"].Value.ToString();
+                string fontFamily = row.Cells["Font Family"].Value.ToString();
+
+                fontFamily = fontFamily + ".ttf";
+                fontFamily = "fonts/" + fontFamily;
+
+                string fontSize = row.Cells["Font Size"].Value.ToString();
+                string textAlign = row.Cells["Text Align"].Value.ToString();
+                string textStroke = row.Cells["Text Stroke"].Value.ToString();
+                string textColor = row.Cells["Text Color"].Value.ToString();
+                string textOpacity = row.Cells["Text Opacity"].Value.ToString();
+
+                inputData = inputData + y1Cor + " | " + y2Cor + " | " + x1Cor + " | " + x2Cor + " | " + fontFamily + " | " + fontSize + " | " + textAlign + " | " + textStroke + " | " + textColor + " | " + textOpacity + " | " + importFile + "\n";
+            }
+
+
+            createInputDataFile(inputData);
+
+        }
+
+
+        public void startProcessing() {
+
+
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -267,7 +330,9 @@ namespace Auto_Poster_Generator
             copyContentFiles(); // Compy content files.
 
             getConfigFileData();
-           
+            getInputData(); // Get input data
+
+            startProcessing();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -277,7 +342,7 @@ namespace Auto_Poster_Generator
 
         private void button3_Click(object sender, EventArgs e)
         {
-            getConfigFileData();
+            
         }
     }
 }

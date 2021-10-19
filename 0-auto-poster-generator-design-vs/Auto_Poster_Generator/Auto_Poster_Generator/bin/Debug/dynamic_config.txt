@@ -1,1 +1,1 @@
-60 | 1 | template.png
+60 | 2 | dynamic-template-image/template.png
