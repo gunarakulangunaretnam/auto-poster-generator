@@ -1,0 +1,2 @@
+97 | 171 | 352 | 754| fonts/ARI.ttf | 100 | center | 0 | 255, 0, 0 | 100 | dynamic-content-files/number-data.txt
+187 | 440 | 63 |1045| fonts/ARI.ttf | 100 | center | 0 | 0, 0, 255 | 100 | dynamic-content-files/data-with-number.txt

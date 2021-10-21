@@ -1,0 +1,60 @@
+01.Introduction to Python Programming
+02.Installing Python on Windows
+03.Hello World Program (Print Text using Python)
+04.Variables in Python
+05.Data Types in Python
+06.Comments in Python
+07.Arithmetic Operations in Python
+08.Comparison Operators in Python
+09.User Input in Python
+10.If Condition in Python
+11.IF Else Condition in Python
+12.Logical Operators in Python
+13.Comparison Operators with If Condition
+14.If Elif Else Statement in Python
+15.Casting in Python (Converting Data Types)
+16.String Concatenation in Python
+17.If Condition Simple Program
+18.String Manipulation in Python
+19. List in Python
+20.List Methods (Part - 01)
+21.List Methods (Part - 02)
+22.For Loop (Part - 01)
+23.For Loop (Part - 02)
+24. For Loop - 03
+25.Break and Continue in Python
+26.While Loop in Python
+27.Tuple in Python
+28.Set in Python (Part - 01)
+29.Set in Python Part 2
+30.Dictionary in Python
+31.How to Loop a Dictionary in Python
+32.Dictionary Methods in Python
+33.Nested Dictionary in Python
+34.Function in Python
+35.Function Parameters in Python (Part - 01)
+36.Function Parameters in Python (Part - 02)
+37.Keyword Arguments with Function in Python (Part - 01)
+38.Keyword Arguments with Function in Python (Part - 2)
+39.How to Return Values from Functions in Python
+40.Lambda Function in Python
+41.Scope in Python
+42.Modules in Python
+43.Datetime in Python (Part - 1)
+44.Datetime in Python (Part - 02)
+45.Set Time in Python
+46.Math Module in Python
+47.Regular Expression in Python
+48.PIP in Python
+49.Try and Except in Python
+50. File Handling in Python
+51.Remove Files and Folders in Python
+52.Random Module in Python
+53.Simple Program 1
+54.Simple Program 2 ODD & Even Number
+55.Simple Program Password Generator
+56.Simple Program 4
+57.Simple Program 5
+57.Simple Program 6
+59.Simple Program 7 Make Random Folders
+60.Final Thoughts

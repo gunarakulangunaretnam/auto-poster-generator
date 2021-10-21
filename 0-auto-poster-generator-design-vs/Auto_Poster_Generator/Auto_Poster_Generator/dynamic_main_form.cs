@@ -300,7 +300,7 @@ namespace Auto_Poster_Generator
                 fontFamily = "fonts/" + fontFamily;
 
                 string fontSize = row.Cells["Font Size"].Value.ToString();
-                string textAlign = row.Cells["Text Align"].Value.ToString();
+                string textAlign = row.Cells["Text Align"].Value.ToString().ToLower();
                 string textStroke = row.Cells["Text Stroke"].Value.ToString();
                 string textColor = row.Cells["Text Color"].Value.ToString();
                 string textOpacity = row.Cells["Text Opacity"].Value.ToString();
