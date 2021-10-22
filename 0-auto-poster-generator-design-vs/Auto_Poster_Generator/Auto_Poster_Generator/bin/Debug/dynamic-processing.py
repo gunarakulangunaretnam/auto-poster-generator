@@ -91,9 +91,16 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 				opacity = int(input_data[y][9])                       # Get opacity
 
 				drawing_object.text((x1 + (box_width / 2), y1 + (box_height / 2)), wrapped_text, font=given_font, fill=(r, g, b, opacity), anchor = 'mm', stroke_width = int(input_data[y][7].strip()), align= f"{input_data[y][6].strip()}") # We do drawing.
-	            
-				print("Processing...") 
-	            
+	      
+				try:
+				  file = open("process_status.txt", "w") # Create a file for process status.
+				  file.write(str(x))                     # Write process status to the file
+				  file.close()													 # Close the file.
+				except Exception as e:                   
+					print(e)
+
+				print("Processing {} / {}".format(x, first_iteration))
+				
 				break # After drawing, break it.
 
 			font_size = font_size - 1
