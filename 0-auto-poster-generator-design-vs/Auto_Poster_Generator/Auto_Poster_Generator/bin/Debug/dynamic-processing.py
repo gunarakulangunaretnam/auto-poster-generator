@@ -94,7 +94,7 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 	      
 				try:
 				  file = open("process_status.txt", "w") # Create a file for process status.
-				  file.write(str(x))                     # Write process status to the file
+				  file.write(str(x + 1))                     # Write process status to the file
 				  file.close()													 # Close the file.
 				except Exception as e:                   
 					print(e)

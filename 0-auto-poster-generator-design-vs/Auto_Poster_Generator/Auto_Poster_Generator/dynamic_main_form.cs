@@ -221,7 +221,6 @@ namespace Auto_Poster_Generator
             string firstFileName = dataGridView1.Rows[0].Cells[0].Value.ToString();
             var lineCount = File.ReadLines(firstFileName).Count();
             
-
             // Get number rows
             string numberOfRows = dataGridView1.Rows.Count.ToString();
 
@@ -316,8 +315,18 @@ namespace Auto_Poster_Generator
 
         public void startProcessing() {
 
+            int percentage = 0;
+            int totalNumberOfImages = 0;
 
+            string firstFileName = dataGridView1.Rows[0].Cells[0].Value.ToString();
+            totalNumberOfImages = File.ReadLines(firstFileName).Count();
 
+            while (percentage <= 100)
+            {
+                string status_percent = File.ReadAllText("process_status.txt", Encoding.UTF8);
+                percentage = totalNumberOfImages * Convert.ToInt32(status_percent) / 100;
+
+            }
 
         }
 
@@ -344,6 +353,12 @@ namespace Auto_Poster_Generator
         private void button3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            startProcessing();
+
         }
     }
 }
