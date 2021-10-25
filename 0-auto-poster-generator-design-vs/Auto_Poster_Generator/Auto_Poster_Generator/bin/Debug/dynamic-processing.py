@@ -10,7 +10,6 @@ image_path = ""                               # Template image path
 input_data = []																# This list contains another list which has the parameters of the sentances (Color, Font-size, Align, stroke, opacity)                  [[23,34,45,67, red, center],[32,43,43,23, green, left]]
 all_content_data = []													#	This list contains another list which has sentances that has be written in the template image according to the input file parameters. [["python", "Java", "PhP"],["Ruby", "Perl", "Dart" ]]
 
-
 with open('dynamic_config.txt') as length_file:    # Open dynamic_config.txt file for template configuration
   
   for index, line in enumerate(length_file):       # Loop dynamic_config.txt 
@@ -94,15 +93,17 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 	      
 				try:
 				  file = open("process_status.txt", "w") # Create a file for process status.
-				  file.write(str(x + 1))                     # Write process status to the file
+				  file.write(f"{str(x + 1)} | {first_iteration}")                     # Write process status to the file
 				  file.close()													 # Close the file.
 				except Exception as e:                   
 					print(e)
 
-				print("Processing {} / {}".format(x, first_iteration))
+				print("Processing {} / {}".format(x+1, first_iteration))
 				
 				break # After drawing, break it.
 
 			font_size = font_size - 1
 
 	template.save(f'dynamic-generated-images/{x}.png') # We save the image.
+
+os.remove("process_status.txt") # Remove the process_status.txt

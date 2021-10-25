@@ -67,12 +67,6 @@
     <Compile Include="splash_screen.Designer.cs">
       <DependentUpon>splash_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="choice_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="choice_form.Designer.cs">
-      <DependentUpon>choice_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="dynamic_main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="splash_screen.resx">
       <DependentUpon>splash_screen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="choice_form.resx">
-      <DependentUpon>choice_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dynamic_main_form.resx">
       <DependentUpon>dynamic_main_form.cs</DependentUpon>

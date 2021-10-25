@@ -54,6 +54,7 @@ namespace Auto_Poster_Generator
             color_picker color_picker1 = new color_picker();
             color_picker1.ShowDialog();
             color_txtbox.Text = color_picker.globalRGBvalue;
+            color_picker.globalRGBvalue = "";
 
 
         }

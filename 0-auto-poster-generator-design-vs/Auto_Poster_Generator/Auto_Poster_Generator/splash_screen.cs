@@ -32,13 +32,18 @@ namespace Auto_Poster_Generator
             {
                 this.Hide();
                 timer1.Stop();
-                choice_form main_form_object = new choice_form();
+                dynamic_main_form main_form_object = new dynamic_main_form();
                 main_form_object.Show();
             }
             else
             {
                 splash_screen_progressbar.Value = progressBarStatus;
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

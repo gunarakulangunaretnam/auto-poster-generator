@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dynamic_main_form));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,7 +44,8 @@
             this.close_btn1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.template_pic_box)).BeginInit();
@@ -59,7 +61,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.progressBar1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.groupBox1);
@@ -275,19 +277,17 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button3
+            // progressBar1
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(33)))), ((int)(((byte)(101)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.button3.Location = new System.Drawing.Point(905, 451);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(336, 44);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Start Processing";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.progressBar1.Location = new System.Drawing.Point(877, 456);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(514, 33);
+            this.progressBar1.TabIndex = 18;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // dynamic_main_form
             // 
@@ -332,7 +332,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

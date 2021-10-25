@@ -312,21 +312,17 @@ namespace Auto_Poster_Generator
 
         }
 
+        public void startProcess()
+        {
 
-        public void startProcessing() {
-
-            int percentage = 0;
-            int totalNumberOfImages = 0;
-
-            string firstFileName = dataGridView1.Rows[0].Cells[0].Value.ToString();
-            totalNumberOfImages = File.ReadLines(firstFileName).Count();
-
-            while (percentage <= 100)
+            using (StreamWriter writetext = new StreamWriter("runner.bat"))
             {
-                string status_percent = File.ReadAllText("process_status.txt", Encoding.UTF8);
-                percentage = totalNumberOfImages * Convert.ToInt32(status_percent) / 100;
-
+                writetext.WriteLine("python dynamic-processing.py");
             }
+
+            System.Diagnostics.Process.Start(@"runner.vbs");
+            timer1.Start();
+
 
         }
 
@@ -342,7 +338,9 @@ namespace Auto_Poster_Generator
             getConfigFileData();
             getInputData(); // Get input data
 
-            startProcessing();
+            startProcess(); // Start processing 
+
+            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -357,7 +355,44 @@ namespace Auto_Poster_Generator
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            startProcessing();
+            
+    
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int percentageComplete = 0;
+            int current_percentage = 0;
+            int totalNumberOfImages = 0;
+            
+            try
+            {
+                using (StreamReader writetext = new StreamReader("process_status.txt")) //Read process_status.txt
+                {
+                    IList<string> vals = writetext.ReadLine().Split('|').ToList<string>(); // Split text file
+                    current_percentage = Convert.ToInt32(vals[0]);                         // Store current percentage
+                    totalNumberOfImages = Convert.ToInt32(vals[1]);                        // Total number
+
+                    percentageComplete = (int)Math.Round((double)(100 * current_percentage) / totalNumberOfImages);
+                    progressBar1.Value = percentageComplete;
+
+                    if (percentageComplete > 100)
+                    {
+                        timer1.Stop();
+                    }
+
+                }
+                  
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err.Message);
+            }
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
 
         }
     }
