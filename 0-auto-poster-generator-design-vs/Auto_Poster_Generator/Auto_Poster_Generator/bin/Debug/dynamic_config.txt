@@ -1,1 +1,1 @@
-60 | 2 | dynamic-template-image/template.png
+51 | 1 | dynamic-template-image/template.jpg

@@ -89,8 +89,26 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 
 				opacity = int(input_data[y][9])                       # Get opacity
 
-				drawing_object.text((x1 + (box_width / 2), y1 + (box_height / 2)), wrapped_text, font=given_font, fill=(r, g, b, opacity), anchor = 'mm', stroke_width = int(input_data[y][7].strip()), align= f"{input_data[y][6].strip()}") # We do drawing.
-	      
+
+				if input_data[y][6].strip() == "center": # For center align
+
+					drawing_object.text((x1 + (box_width / 2), y1 + (box_height / 2)), wrapped_text, font=given_font, fill=(r, g, b, opacity), anchor = 'mm', stroke_width = int(input_data[y][7].strip()), align= f"center") # We do drawing.
+
+				elif input_data[y][6].strip() == "left": # For left align
+					
+					#We remove anchor = 'mm' and (box_width / 2) & (box_height / 2) from x1 and y1
+					drawing_object.text((x1, y1), wrapped_text, font=given_font, fill=(r, g, b, opacity), stroke_width = int(input_data[y][7].strip()), align= f"left") # We do drawing.
+
+				elif input_data[y][6].strip() == "right": # For right align
+
+					# We use x2 - per_char_avg_width * len(totalNumberOfChars) y2 - text_height (Hight of a char)
+					drawing_object.text((x2 - per_char_avg_width * len(wrapped_text), y2 - text_height), wrapped_text, font=given_font, fill=(r, g, b, opacity), stroke_width = int(input_data[y][7].strip()), align= f"right") # We do drawing. 
+
+				else:
+
+					print("Something went wrong.")
+					break
+					
 				try:
 				  file = open("process_status.txt", "w") # Create a file for process status.
 				  file.write(f"{str(x + 1)} | {first_iteration}")                     # Write process status to the file

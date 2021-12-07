@@ -1,3 +1,2 @@
-97 | 171 | 352 | 754 | fonts/ArialCE.ttf | 50 | center | 1 | 255, 0, 0 | 100 | dynamic-content-files/number-data.txt
-187 | 440 | 63 | 1045 | fonts/Arialn.ttf | 60 | center | 0 | 0, 0, 255 | 100 | dynamic-content-files/data-without-number.txt
+583 | 624 | 163 | 1183 | fonts/ARI.ttf | 100 | right | 0 | 0, 0, 0 | 100 | dynamic-content-files/data.txt
 

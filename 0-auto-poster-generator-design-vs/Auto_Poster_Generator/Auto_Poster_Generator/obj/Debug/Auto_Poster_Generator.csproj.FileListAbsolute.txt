@@ -77,3 +77,7 @@ C:\Users\vrano\Documents\Visual Studio 2013\Projects\auto-poster-generator\auto-
 C:\Users\vrano\Documents\Visual Studio 2013\Projects\auto-poster-generator\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.GenerateResource.Cache
 C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.dynamic_features_form.resources
 C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.dynamic_main_form.resources
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.AssemblyReference.cache
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.CoreCompileInputs.cache
+C:\Users\Gunarakulan\Desktop\auto-poster-generator\0-auto-poster-generator-design-vs\Auto_Poster_Generator\Auto_Poster_Generator\obj\Debug\Auto_Poster_Generator.csproj.CopyComplete
