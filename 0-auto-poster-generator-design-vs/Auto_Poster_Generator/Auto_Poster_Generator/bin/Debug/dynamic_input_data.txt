@@ -1,2 +1,2 @@
-583 | 624 | 163 | 1183 | fonts/ARI.ttf | 100 | right | 0 | 0, 0, 0 | 100 | dynamic-content-files/data.txt
+493 | 743 | 273 | 1813 | fonts/ArialCEItalic.ttf | 100 | center | 2 | 255, 0, 0 | 100 | dynamic-content-files/name.txt
 

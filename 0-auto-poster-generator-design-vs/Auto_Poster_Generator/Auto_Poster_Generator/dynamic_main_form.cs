@@ -359,12 +359,13 @@ namespace Auto_Poster_Generator
     
         }
 
+        int percentageComplete = 0;
+        int current_percentage = 0;
+        int totalNumberOfImages = 0;
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int percentageComplete = 0;
-            int current_percentage = 0;
-            int totalNumberOfImages = 0;
-            
+
             try
             {
                 using (StreamReader writetext = new StreamReader("process_status.txt")) //Read process_status.txt
@@ -373,12 +374,27 @@ namespace Auto_Poster_Generator
                     current_percentage = Convert.ToInt32(vals[0]);                         // Store current percentage
                     totalNumberOfImages = Convert.ToInt32(vals[1]);                        // Total number
 
-                    percentageComplete = (int)Math.Round((double)(100 * current_percentage) / totalNumberOfImages);
+                    percentageComplete = (int)Math.Round((double) 100 * current_percentage / totalNumberOfImages);
                     progressBar1.Value = percentageComplete;
 
-                    if (percentageComplete > 100)
+       
+                    if (progressBar1.Value >= 100)
                     {
                         timer1.Stop();
+                        progressBar1.Value = 0;
+                        file_search_txtbox.Clear();
+                        template_pic_box.Image = null;
+
+                        foreach (DataGridViewRow row in dataGridView1.Rows)
+                        {
+                            try
+                            {
+                                dataGridView1.Rows.Remove(row);
+                            }
+                            catch (Exception) { }
+                        }
+
+                        MessageBox.Show("Completed!");
                     }
 
                 }

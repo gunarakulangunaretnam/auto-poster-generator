@@ -103,7 +103,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.label1.Location = new System.Drawing.Point(59, 188);
+            this.label1.Location = new System.Drawing.Point(59, 263);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 26);
             this.label1.TabIndex = 12;
@@ -130,7 +130,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.label3.Location = new System.Drawing.Point(59, 257);
+            this.label3.Location = new System.Drawing.Point(59, 401);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(167, 26);
             this.label3.TabIndex = 15;
@@ -143,7 +143,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.label4.Location = new System.Drawing.Point(59, 326);
+            this.label4.Location = new System.Drawing.Point(59, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 26);
             this.label4.TabIndex = 18;
@@ -156,7 +156,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
-            this.label5.Location = new System.Drawing.Point(59, 395);
+            this.label5.Location = new System.Drawing.Point(59, 331);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(168, 26);
             this.label5.TabIndex = 21;
@@ -183,7 +183,7 @@
             this.font_family_combobox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.font_family_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
             this.font_family_combobox.FormattingEnabled = true;
-            this.font_family_combobox.Location = new System.Drawing.Point(250, 466);
+            this.font_family_combobox.Location = new System.Drawing.Point(250, 464);
             this.font_family_combobox.Name = "font_family_combobox";
             this.font_family_combobox.Size = new System.Drawing.Size(278, 34);
             this.font_family_combobox.TabIndex = 5;
@@ -194,7 +194,7 @@
             this.y1_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.y1_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.y1_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.y1_txtbox.Location = new System.Drawing.Point(250, 185);
+            this.y1_txtbox.Location = new System.Drawing.Point(250, 260);
             this.y1_txtbox.Multiline = true;
             this.y1_txtbox.Name = "y1_txtbox";
             this.y1_txtbox.Size = new System.Drawing.Size(278, 29);
@@ -207,7 +207,7 @@
             this.y2_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.y2_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.y2_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.y2_txtbox.Location = new System.Drawing.Point(250, 252);
+            this.y2_txtbox.Location = new System.Drawing.Point(250, 396);
             this.y2_txtbox.Multiline = true;
             this.y2_txtbox.Name = "y2_txtbox";
             this.y2_txtbox.Size = new System.Drawing.Size(278, 29);
@@ -220,7 +220,7 @@
             this.x1_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.x1_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.x1_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.x1_txtbox.Location = new System.Drawing.Point(250, 323);
+            this.x1_txtbox.Location = new System.Drawing.Point(250, 190);
             this.x1_txtbox.Multiline = true;
             this.x1_txtbox.Name = "x1_txtbox";
             this.x1_txtbox.Size = new System.Drawing.Size(278, 29);
@@ -233,7 +233,7 @@
             this.x2_txtbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.x2_txtbox.Font = new System.Drawing.Font("Cambria", 13F, System.Drawing.FontStyle.Bold);
             this.x2_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(17)))), ((int)(((byte)(55)))));
-            this.x2_txtbox.Location = new System.Drawing.Point(250, 396);
+            this.x2_txtbox.Location = new System.Drawing.Point(250, 332);
             this.x2_txtbox.Multiline = true;
             this.x2_txtbox.Name = "x2_txtbox";
             this.x2_txtbox.Size = new System.Drawing.Size(278, 29);
@@ -416,11 +416,11 @@
             // opacity_trackbar
             // 
             this.opacity_trackbar.Location = new System.Drawing.Point(857, 395);
-            this.opacity_trackbar.Maximum = 100;
+            this.opacity_trackbar.Maximum = 255;
             this.opacity_trackbar.Name = "opacity_trackbar";
             this.opacity_trackbar.Size = new System.Drawing.Size(278, 56);
             this.opacity_trackbar.TabIndex = 55;
-            this.opacity_trackbar.Value = 100;
+            this.opacity_trackbar.Value = 255;
             this.opacity_trackbar.Scroll += new System.EventHandler(this.opacity_trackbar_Scroll);
             // 
             // stroke_display
@@ -499,7 +499,7 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(211)))), ((int)(((byte)(225)))));
             this.label12.Location = new System.Drawing.Point(480, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(287, 44);
+            this.label12.Size = new System.Drawing.Size(281, 43);
             this.label12.TabIndex = 0;
             this.label12.Text = "Insert File Data";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -518,7 +518,7 @@
             this.search_color_btn.Zoom = 10;
             this.search_color_btn.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // features_form
+            // dynamic_features_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -526,7 +526,7 @@
             this.ClientSize = new System.Drawing.Size(1256, 674);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "features_form";
+            this.Name = "dynamic_features_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "features";
             this.Load += new System.EventHandler(this.features_form_Load);

@@ -122,6 +122,8 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 
 			font_size = font_size - 1
 
+	template = template.convert("RGBA")
+
 	template.save(f'dynamic-generated-images/{x}.png') # We save the image.
 
 os.remove("process_status.txt") # Remove the process_status.txt

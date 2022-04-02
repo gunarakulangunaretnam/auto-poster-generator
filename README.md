@@ -40,6 +40,8 @@ This system generate images writing text on a base template, first we need to gi
 
 We can write many text elements on a base template, but, the number of texts elements in all batches should be same.
 
+### What can we do with this system?
+
 ### Input
 
 **Note** As an input, we give this base template, here we want to write the tutorial number on the first box, and the tutorial heading on the second big box, these headings and tutorial numbers' data are given in the .txt format.
@@ -50,9 +52,31 @@ We can write many text elements on a base template, but, the number of texts ele
 
 **Note** As outputs, the system generates images with tutorial numbers and tutorial headings from the given .txt files, but if we are writing more than 1 text elements into a base template, the number of texts must be same, for an example, if we want to generate 60 posters, we need to give 60 text elements for tutorial numbers, and 60 text elements for tutorial headings. We can call one processing as a batch. We can write many text elements as we want, but the number of texts in element must match with others.
 
+![Image](github-readme-contents/output.png)
+
 ### Text files inputs
 
-![Image](github-readme-contents/output.png)
+
+#### Tutorial number data text file
+
+**Note:** This number-data.txt file contains numbers to be placed on the first box.
+
+![Image](github-readme-contents/number.jpg)
+
+#### Tutorial heading data text file
+
+**Note:** This data-without-number.txt file contains tutorial headings to be placed on the second big box.
+
+![Image](github-readme-contents/text.jpg)
+
+
+**IMPORTANT NOTE:** Like this, we can generate poster according to our needs with many numbers of text elements.
+
+### How can we use this system?
+
+#### Chose a template
+
+
 
 ## Execution & Running
 
