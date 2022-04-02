@@ -76,7 +76,6 @@ We can write many text elements on a base template, but, the number of texts ele
 
 #### Chose a template
 
-
 **Note 01:** For the demonstration purpose, this simple template has been chosen, here we need to write (name, to, form, amount, signature) in this voucher template. Let's think, we have to generate 1000 voucher for 1000 people, editing one by one is hard, therefore, we are going to use this system to generate vouchers based on a template.
 
 **Note 02:** We are going to generate 10 vouchers for the demonstration.
@@ -102,6 +101,10 @@ We can write many text elements on a base template, but, the number of texts ele
 ##### 04 signature-listtxt
 
 ![Image](github-readme-contents/signature-list.jpg)
+
+
+#### Get X1 Y1 X2 Y2 coordinates from the template
+
 
 ## Execution & Running
 
