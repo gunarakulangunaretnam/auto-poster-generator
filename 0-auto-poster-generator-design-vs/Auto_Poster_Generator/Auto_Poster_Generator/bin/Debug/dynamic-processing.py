@@ -44,6 +44,7 @@ with open('dynamic_input_data.txt') as content_file:  # Open dynamic_input_data.
 for x in range(int(first_iteration)):  												  # Loop first iteration (Number of sentances in a input file.) (Number of images need to created)
 
 	template = Image.open(os.path.join(os.getcwd(), image_path))  # Get the template image.
+	template = template.convert("RGBA")
 	drawing_object = ImageDraw.Draw(template)  										# Create a drawing object.   
 
 	for y in range(int(secound_iteration)):                       # Loop the secound iteration in the first iternation. (Number of boxes in a teamplate image)
@@ -122,7 +123,7 @@ for x in range(int(first_iteration)):  												  # Loop first iteration (Num
 
 			font_size = font_size - 1
 
-	template = template.convert("RGBA")
+	
 
 	template.save(f'dynamic-generated-images/{x}.png') # We save the image.
 
