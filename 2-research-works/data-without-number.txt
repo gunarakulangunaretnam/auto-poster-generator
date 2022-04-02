@@ -1,4 +1,4 @@
-Introduction to Python ProgrammingIntroduction to Python ProgrammingIntroduction to Python Programming
+Introduction to Python Programming
 Installing Python on Windows Computer
 Hello World Program 
 Variables in Python

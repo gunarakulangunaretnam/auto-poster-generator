@@ -33,13 +33,36 @@ The Python scripts making up the backend can be accessed and modified easily to 
   pip install textwrap3
   ```
 
-## Run Method 1
+
+## System Explained
+
+This system generate images writing text on a base template, first we need to give the Y1, Y2 (Starting point) | X1, X2 (Ending point) coordinates.
+
+We can write many text elements on a base template, but, the number of texts elements in all batches should be same.
+
+### Input
+
+**Note** As an input, we give this base template, here we want to write the tutorial number on the first box, and the tutorial heading on the second big box, these headings and tutorial numbers' data are given in the .txt format.
+
+![Image](github-readme-contents/input.png)
+
+### Output
+
+**Note** As outputs, the system generates images with tutorial numbers and tutorial headings from the given .txt files, but if we are writing more than 1 text elements into a base template, the number of texts must be same, for an example, if we want to generate 60 posters, we need to give 60 text elements for tutorial numbers, and 60 text elements for tutorial headings. We can call one processing as a batch. We can write many text elements as we want, but the number of texts in element must match with others.
+
+### Text files inputs
+
+![Image](github-readme-contents/output.png)
+
+## Execution & Running
+
+### Run Method 1
 
 ```
 Execute Auto_Poster_Generator.exe found in "auto-poster-generator/0-auto-poster-generator-design-vs/Auto_Poster_Generator/Auto_Poster_Generator/bin/Debug/"
 ```
 
-## Run Method 2
+### Run Method 2
 
 ```
 Open the project in Visual Studio and click debugging to run the prohect.
