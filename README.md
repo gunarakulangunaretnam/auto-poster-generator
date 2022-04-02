@@ -83,7 +83,25 @@ We can write many text elements on a base template, but, the number of texts ele
 
 ![Image](github-readme-contents/base-template.png)
 
+#### Create data for to, form, amount and signature.
 
+##### 01 to-list.txt
+
+![Image](github-readme-contents/to-list.jpg)
+
+
+##### 02 from-list.txt
+
+![Image](github-readme-contents/from-list.jpg)
+
+##### 03 amount-list.txt
+
+![Image](github-readme-contents/amount-list.jpg)
+
+
+##### 04 signature-listtxt
+
+![Image](github-readme-contents/signature-list.jpg)
 
 ## Execution & Running
 
