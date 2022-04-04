@@ -98,12 +98,27 @@ We can write many text elements on a base template, but, the number of texts ele
 ![Image](github-readme-contents/amount-list.jpg)
 
 
-##### 04 signature-listtxt
+##### 04 signature-list.txt
 
 ![Image](github-readme-contents/signature-list.jpg)
 
 
+**Note:** to-list.txt, from-list.txt, amount-list.txt and signature-list.txt, all text files must contains same number of text items in it.
+
 #### Get X1 Y1 X2 Y2 coordinates from the template
+
+To get the coordinates from the base template, we can use the Windows print application that is come with Windows OS, we can also use Photoshop or editing tools to get the coordinates.
+
+![Image](github-readme-contents/get-coordinates.gif)
+
+**Note 1** Open print application, load the base template in it, and move the mouse to get the X,Y coordinates.
+
+**Note 2** We need to get the X1, Y1 (Starting Point), X2, Y2 (Ending Point) coordinates from the base template.
+
+
+
+
+
 
 
 ## Execution & Running
