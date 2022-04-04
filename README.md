@@ -122,6 +122,19 @@ To get the coordinates from the base template, we can use the Windows print appl
 
 **Note 2** We need to get the X1, Y1 (Starting Point), X2, Y2 (Ending Point) coordinates from the base template.
 
+#### Example of X1, Y1, X2, Y2 Coordinates
+
+![Image](github-readme-contents/base-template-edited.jpg)
+
+**Note** This is a sample explanation of starting and ending point coordinates (X1, Y1 X2, Y2).
+
+
+![Image](github-readme-contents/base-template-edited-1.jpg)
+
+**Note** We need to get (X1, Y1 X2, Y2) coordinates as a box shape, example is shown above.
+
+
+
 
 ## Execution & Running
 
