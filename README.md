@@ -27,6 +27,13 @@ The Python scripts making up the backend can be accessed and modified easily to 
   pip install pillow
   ```
 
+* Installing PIL
+
+  ```
+  python -m pip install Pillow
+  ```
+
+
 * Installing textwrap
 
   ```
@@ -114,11 +121,6 @@ To get the coordinates from the base template, we can use the Windows print appl
 **Note 1** Open print application, load the base template in it, and move the mouse to get the X,Y coordinates.
 
 **Note 2** We need to get the X1, Y1 (Starting Point), X2, Y2 (Ending Point) coordinates from the base template.
-
-
-
-
-
 
 
 ## Execution & Running
