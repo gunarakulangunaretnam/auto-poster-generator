@@ -81,7 +81,7 @@ We can write many text elements on a base template, but, the number of texts ele
 
 ### How can we use this system?
 
-#### Chose a template
+### Chose a template
 
 **Note 01:** For the demonstration purpose, this simple template has been chosen, here we need to write (name, to, form, amount, signature) in this voucher template. Let's think, we have to generate 1000 voucher for 1000 people, editing one by one is hard, therefore, we are going to use this system to generate vouchers based on a template.
 
@@ -134,7 +134,40 @@ To get the coordinates from the base template, we can use the Windows print appl
 **Note** We need to get (X1, Y1 X2, Y2) coordinates as a box shape, example is shown above.
 
 
+- TO        = 858, 137 (Starting Point) | 1471, 211 (Ending Point)
+- FROM      = 894, 255 (Starting Point) | 1471, 326 (Ending Point)
+- AMOUNT 	  = 926, 371 (Starting Point) | 1471, 442 (Ending Point)
+- SIGNATURE = 947, 487 (Starting Point)  | 1471, 563 (Ending Point)
 
+
+**Note:** After selecting coordinates, it's time to generate posters.
+
+### Open Auto_Poster_Generator.exe
+
+- This exe file is found on the following directory.
+```
+"auto-poster-generator/0-auto-poster-generator-design-vs/Auto_Poster_Generator/Auto_Poster_Generator/bin/Debug/Auto_Poster_Generator.exe"
+```
+
+#### Loading Screen
+
+**Note:** This is the loading screen, it runs at the beginning of the program.
+
+![Image](github-readme-contents/1-pos.jpg)
+
+
+#### Dashboard Structure
+
+**Note:** This is the main dashboard of the system, here we need to enter text data to generate posters.
+
+![Image](github-readme-contents/2-pos.jpg)
+
+
+#### Input data
+
+**Note:** In this Window, we have to enter the text elements' data such as coordinates, text-align, text color, text size etc.
+
+![Image](github-readme-contents/3-pos.jpg)
 
 ## Execution & Running
 
@@ -147,7 +180,7 @@ Execute Auto_Poster_Generator.exe found in "auto-poster-generator/0-auto-poster-
 ### Run Method 2
 
 ```
-Open the project in Visual Studio and click debugging to run the prohect.
+Open the project in Visual Studio and click debugging to run the project.
 ```
 
 
