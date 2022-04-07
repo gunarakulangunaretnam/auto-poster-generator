@@ -258,6 +258,18 @@ To get the coordinates from the base template, we can use the Windows print appl
 ![Image](github-readme-contents/ready-to-be-process.jpg)
 
 
+### Outputs
+
+![Image](github-readme-contents/output-0.jpg)
+
+**Note** After clicking the "Start Processing" button, it generates all of the posters.
+
+### Sample poster
+
+![Image](github-readme-contents/output-1.png)
+
+**Note** We have increased the stroke for amount and signature, therefore it looks much ticker. By using this poster generator system we can generate certificates, banners and etc.
+
 
 ## Execution & Running
 

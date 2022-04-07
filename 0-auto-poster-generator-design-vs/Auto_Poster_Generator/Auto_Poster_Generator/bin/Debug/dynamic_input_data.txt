@@ -1,5 +1,5 @@
-137 | 211 | 858 | 1471 | fonts/ARI.ttf | 40 | left | 1 | 255, 0, 0 | 100 | dynamic-content-files/to-list.txt
-255 | 326 | 894 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 0, 0, 255 | 100 | dynamic-content-files/from-list.txt
-371 | 442 | 926 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 0, 255, 0 | 100 | dynamic-content-files/amount-list.txt
-487 | 563 | 947 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 235, 150, 76 | 100 | dynamic-content-files/signature-list.txt
+137 | 211 | 858 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 240, 0, 0 | 255 | dynamic-content-files/to-list.txt
+255 | 326 | 894 | 1471 | fonts/ARI.ttf | 40 | left | 1 | 0, 0, 255 | 255 | dynamic-content-files/from-list.txt
+371 | 442 | 926 | 1471 | fonts/ARI.ttf | 40 | left | 5 | 208, 127, 208 | 255 | dynamic-content-files/amount-list.txt
+487 | 563 | 947 | 1471 | fonts/ARI.ttf | 40 | left | 5 | 0, 255, 0 | 255 | dynamic-content-files/signature-list.txt
 
