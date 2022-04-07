@@ -271,6 +271,52 @@ To get the coordinates from the base template, we can use the Windows print appl
 **Note** We have increased the stroke for amount and signature, therefore it looks much ticker. By using this poster generator system we can generate certificates, banners and etc.
 
 
+## Technical Explanation of System
+
+Python and C# are used to develop this system. Python is the major programming language that does the poster generation part of the system. C# is for management side of the system where we used to add coordinates, text color, font size and etc.
+
+- Python - Responsible for poster generation.
+- C#     - Responsible for management (Add coordinates and other text element data).
+
+![Image](github-readme-contents/system-diagram.png)
+
+
+C# write all the text elements data in a text file (dynamic_input_data.txt) then, python script reads that text file to generate posters.
+
+There are 3 main txt files are in this system that are used to make a connection between Python and C#.
+
+- **dynamic_input_data.txt :** Stores all text elements' inputs such as coordinates, color, size and etc.
+
+- **dynamic_config.txt :** This text file contains template path, number of poster count and number of iterations and etc.
+
+- **process_status.txt :** It updates progress bar status to be read and displayed by C#.
+
+### 01 dynamic_input_data.txt File
+
+This file contains text element's data such as (X1, Y1, X2, Y2) coordinates, text color, text size, text stroke, opacity and etc, then Python reads this text file and generate posters based on it.
+
+**Note** dynamic_input_data.txt file is created by the C#.
+
+![Image](github-readme-contents/file-1.png)
+
+### 02 dynamic_config.txt File
+
+This file contains number of posters that it needs to generate, number of iterations (Number of batches), template path.
+
+**Note** dynamic_config.txt file is created by the C#.
+
+![Image](github-readme-contents/file-2.jpg)
+
+
+### 03 process_status.txt File
+
+This file updates the progress bar status while the poster generation part is running, then the C# reads this text file to graphically shows the progress bar.
+
+**Note** process_status.txt file is created by the C#.
+
+![Image](github-readme-contents/file-2.jpg)
+
+
 ## Execution & Running
 
 ### Run Method 1
@@ -289,7 +335,7 @@ Open the project in Visual Studio and click debugging to run the project.
 Any Questions? | Conduct Me
 ---
 
-* [Linkedin Profile](https://www.linkedin.com/in/gunarakulan-gunaretnam-161119156/)
+* [Linkedin Profile](https://www.linkedin.com/in/gunarakulangunaretnam/)
 * [Facebook Profile](https://www.facebook.com/gunarakulan)
 * [Twitter Profile](https://twitter.com/gunarakulang)
 * [Instagram Profile](https://www.instagram.com/gunarakulan_gunaretnam/)
