@@ -169,6 +169,96 @@ To get the coordinates from the base template, we can use the Windows print appl
 
 ![Image](github-readme-contents/3-pos.jpg)
 
+
+#### Example of generating posters
+
+**Note** You can find a folder called "3-test-sample-data" in this repository, in the folder, there is a base template and text files that are used to generate sample posters for testing purpose.  
+
+![Image](github-readme-contents/file.jpg)
+
+- base-template
+- amount-list
+- from-list
+- to-list
+- signature-list
+
+##### base-template
+
+![Image](github-readme-contents/base-template.png)
+
+
+**Note:** We are going to use this template for a sample testing. There are files such as amount-list.txt, from-list.txt, to-list.txt, signature-list.txt, these files could be used to generate posters.
+
+
+#### Step:01 Import the base-template
+
+**Note:** Open the system and this template.
+
+![Image](github-readme-contents/insert-image.jpg)
+
+#### Step:02 Import data of "to" from "to-list.txt"
+
+**Note:** click the import data and enter all of the coordinates (X1,Y1,X2,Y2) and load to-list.txt file.
+
+**Load to-list.txt** Load the to-list.txt file as a text element.
+
+![Image](github-readme-contents/to-list-load.jpg)
+
+**Enter text elements data** Enter coordinates, font-color, font-size and other text element data.
+
+![Image](github-readme-contents/to-list-data.jpg)
+
+
+#### Step:03 Import data of "from" from "from-list-list.txt"
+
+**Note:** click the import data and enter all of the coordinates (X1,Y1,X2,Y2) and load from-list.txt file.
+
+
+**Load from-list.txt** Load the from-list.txt file as a text element.
+
+![Image](github-readme-contents/from-list-load.jpg)
+
+
+**Enter text elements data** Enter coordinates, font-color, font-size and other text element data.
+
+![Image](github-readme-contents/from-list-data.jpg)
+
+#### Step:04 Import data of "amount" from "amount-list-list.txt"
+
+**Note:** click the import data and enter all of the coordinates (X1,Y1,X2,Y2) and load amount-list.txt file.
+
+
+**Load amount-list.txt** Load the from-list.txt file as a text element.
+
+![Image](github-readme-contents/amount-list-load.jpg)
+
+
+**Enter text elements data** Enter coordinates, font-color, font-size and other text element data.
+
+![Image](github-readme-contents/amount-list-data.jpg)
+
+#### Step:04 Import data of "signature" from "signature-list-list.txt"
+
+**Note:** click the import data and enter all of the coordinates (X1,Y1,X2,Y2) and load amount-list.txt file.
+
+
+**Load signature-list.txt** Load the from-list.txt file as a text element.
+
+![Image](github-readme-contents/signature-list-load.jpg)
+
+
+**Enter text elements data** Enter coordinates, font-color, font-size and other text element data.
+
+![Image](github-readme-contents/signature-list-data.jpg)
+
+### Ready to generate posters.
+
+**Note** After insetting all text elements data and text files, now we are start the processing to generate posters.
+
+![Image](github-readme-contents/ready-to-be-process.jpg)
+
+
+
 ## Execution & Running
 
 ### Run Method 1

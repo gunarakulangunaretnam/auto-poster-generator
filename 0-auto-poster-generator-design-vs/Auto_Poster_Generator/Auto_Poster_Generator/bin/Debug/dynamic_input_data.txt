@@ -1,2 +1,5 @@
-493 | 743 | 273 | 1813 | fonts/ArialCEItalic.ttf | 100 | center | 2 | 255, 0, 0 | 100 | dynamic-content-files/name.txt
+137 | 211 | 858 | 1471 | fonts/ARI.ttf | 40 | left | 1 | 255, 0, 0 | 100 | dynamic-content-files/to-list.txt
+255 | 326 | 894 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 0, 0, 255 | 100 | dynamic-content-files/from-list.txt
+371 | 442 | 926 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 0, 255, 0 | 100 | dynamic-content-files/amount-list.txt
+487 | 563 | 947 | 1471 | fonts/ARI.ttf | 40 | left | 2 | 235, 150, 76 | 100 | dynamic-content-files/signature-list.txt
 

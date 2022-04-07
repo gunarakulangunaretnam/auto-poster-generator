@@ -1,1 +1,1 @@
-4 | 1 | dynamic-template-image/base-template.jpg
+10 | 4 | dynamic-template-image/base-template.png
