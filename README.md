@@ -11,7 +11,7 @@ Auto Poster Generator is coded using both Python and C#. The image manipulations
 
 The Python scripts making up the backend can be accessed and modified easily to suit a person's/organization's preferences.
 
-## Programming Languages & Frameworks
+## Technology and Frameworks
 
 * Python
   * Pillow
