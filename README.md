@@ -1,15 +1,15 @@
 
-# AUTO POSTER GENERATOR
+# Auto Poster Generator
 
 ## Introduction
 
-A prototype to generate posters, certificates, banners, images with custom texts using a base template. The configuration is designed to be very easy and user friendly. Another major advantage of this software is it's designed to run on very low resources, while offering flexibility.
+Introducing Auto Poster Generator, a user-friendly prototype designed to effortlessly create posters, certificates, banners, and images with customized text. Engineered for simplicity and flexibility, this software offers a hassle-free configuration process, ensuring ease of use for both educational and commercial organizations. Its lightweight design allows it to operate efficiently on low-resource systems without compromising on functionality.
 
-This program can be very helpful for both education and other organization including commercial ones since the need to generate posters/certificates etc. It is one that arises in many such organizations.
+Auto Poster Generator is powered by a blend of Python and C#, combining the strengths of both languages for optimal performance. The image manipulation algorithms, responsible for analyzing and placing text within images, are crafted in Python for precision and adaptability. Meanwhile, the intuitive graphical user interface (GUI) is developed in C#, providing a seamless and modular experience for users.
 
-Auto Poster Generator is coded using both Python and C#. The image manipulations process, which analyzes the and manipulates the image in order to  place the text is written in Python. A user friendly GUI was coded in C#, making this software both easy and modular.
+One of the standout features of Auto Poster Generator is its accessibility for customization. The Python scripts constituting the backend are readily accessible and modifiable, empowering users to tailor the software to their specific preferences and organizational needs.
 
-The Python scripts making up the backend can be accessed and modified easily to suit a person's/organization's preferences.
+With Auto Poster Generator, creating professional-grade posters, certificates, banners, and images becomes a breeze, making it an invaluable tool for a wide range of applications across various industries.
 
 ## Technology and Frameworks
 
@@ -331,7 +331,7 @@ Execute Auto_Poster_Generator.exe found in "auto-poster-generator/0-auto-poster-
 Open the project in Visual Studio and click debugging to run the project.
 ```
 
-# CONTACT
+# Contact
 
 ### Website: 
 
